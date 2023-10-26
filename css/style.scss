@@ -961,6 +961,8 @@ body {
   }
 
   .bg-images {
+    overflow: hidden;
+
     img.first {
       position: absolute;
       top: 0;
@@ -980,6 +982,7 @@ body {
 #three_model {
   text-align: center;
   padding-top: 178px;
+  padding-bottom: 52px;
   background: linear-gradient(180deg, #fff 0%, #d9dede 100%);
 
   h2 {
@@ -1067,6 +1070,8 @@ body {
 
   .three-model {
     max-width: 1145px;
+    height: 710px;
+    margin: auto;
 
     img {
       width: 100%;
@@ -1080,6 +1085,7 @@ body {
     justify-content: center;
 
     button {
+      position: relative;
       background: transparent;
       color: var(--White, #fff);
       font-family: BlissPro;
@@ -1090,6 +1096,127 @@ body {
       border: none;
       outline: none;
       padding: 0px 18px 8px;
+
+      img {
+        position: absolute;
+        bottom: -180%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+#gallery {
+  .head {
+    padding-top: 100px;
+    padding-bottom: 10px;
+
+    .gallery-nav {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      h3 {
+        color: var(--Main-color, #007295);
+        text-align: center;
+        font-family: TERRANICA;
+        font-size: 37px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124.8%;
+        letter-spacing: 1.48px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+
+      .switch {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+
+        button {
+          color: #9a9c9c;
+          text-align: center;
+          font-family: "BlissPro", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 124.8%;
+          text-transform: uppercase;
+          border: none;
+          outline: none;
+          opacity: 0.8;
+
+          &.active {
+            color: var(--Main-color, #007295);
+          }
+        }
+
+        span {
+          color: rgba(60, 60, 60, 0.18);
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 124.8%;
+          letter-spacing: 0.72px;
+          text-transform: uppercase;
+        }
+      }
+
+      .slider-control {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+
+        button {
+          border: none;
+          outline: none;
+          width: 21px;
+          height: 23px;
+
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .show {
+          display: flex;
+          align-items: flex-end;
+
+          h4 {
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 46px;
+            color: #007295;
+          }
+
+          span {
+            font-size: 22px;
+            line-height: 32px;
+            color: #9a9c9c;
+          }
+
+          h5 {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #9a9c9c;
+          }
+        }
+      }
+    }
+  }
+  .gallery-photos {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+
+    .gallery-item {
+      min-width: 205px;
     }
   }
 }
