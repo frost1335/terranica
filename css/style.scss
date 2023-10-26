@@ -976,3 +976,120 @@ body {
     }
   }
 }
+
+#three_model {
+  text-align: center;
+  padding-top: 178px;
+  background: linear-gradient(180deg, #fff 0%, #d9dede 100%);
+
+  h2 {
+    max-width: 900px;
+    margin: auto;
+    color: var(--Main-color, #007295);
+    text-align: center;
+    font-family: TERRANICA;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168%; /* 62.16px */
+    letter-spacing: 1.48px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+
+  p {
+    color: #969696;
+    text-align: center;
+    font-family: Bliss Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120.8%;
+    margin-bottom: 45px;
+  }
+
+  .colors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 85px;
+    margin-bottom: 20px;
+
+    button {
+      border: none;
+      outline: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      transition: 0.3s;
+
+      span {
+        flex-shrink: 0;
+        display: block;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        margin-bottom: 6px;
+        transition: 0.3s;
+        box-shadow: 0 0 5px 1px #eee;
+      }
+
+      h5 {
+        color: var(--Black, #0f0f0f);
+        opacity: 0;
+        text-align: center;
+        font-family: "BlissPro", sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120.8%;
+        letter-spacing: 1.425px;
+        text-transform: uppercase;
+        transition: 0.3s all;
+      }
+
+      &:hover {
+        span {
+          width: 54px;
+          height: 54px;
+        }
+
+        h5 {
+          width: auto;
+          height: auto;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .three-model {
+    max-width: 1145px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .model-angle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      background: transparent;
+      color: var(--White, #fff);
+      font-family: BlissPro;
+      font-size: 19.081px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120.8%;
+      border: none;
+      outline: none;
+      padding: 0px 18px 8px;
+    }
+  }
+}
