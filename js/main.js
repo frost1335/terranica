@@ -25,6 +25,9 @@
   }
 })();
 
+const gallery = document.getElementById("carouselExampleIndicators");
+const carouselItems = gallery.querySelectorAll(".carousel-item");
+
 // Открытие документов
 (function open_docs() {
   let overlay = document.querySelector(".overlay");
