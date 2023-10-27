@@ -364,6 +364,13 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .threejs-model {
+      position: relative;
+      z-index: 150;
+      width: 100%;
+      height: 710px;
+    }
   }
 
   .model-angle {
