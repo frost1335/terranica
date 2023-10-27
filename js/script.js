@@ -45,7 +45,7 @@ renderer.setSize(container.clientWidth, container.clientHeight);
 
 container.appendChild(renderer.domElement);
 
-camera.position.z = 2.5
+camera.position.z = 3
 camera.position.y = 2;
 camera.position.x = 3;
 
