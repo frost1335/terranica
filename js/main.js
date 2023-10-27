@@ -1,3 +1,5 @@
+let currentGallery = 1;
+const currentBox = document.getElementById("gallery-current");
 // Бургер Меню
 (function burger_menu() {
   let bmenu = document.querySelector(".burger-menu");
@@ -12,6 +14,41 @@
     body.classList.toggle("noscroll");
   };
 })();
+
+const homeCornerPlayer = document.getElementById("home-corner-video");
+const cornerPlay = document.getElementById("corner-play");
+
+homeCornerPlayer.play();
+
+homeCornerPlayer.addEventListener("ended", function () {
+  homeCornerPlayer.currentTime = 0;
+  homeCornerPlayer.play();
+});
+
+cornerPlay.addEventListener("click", () => {
+  homeCornerPlayer.pause();
+});
+
+function onNext() {
+  currentGallery += 1;
+  if (currentGallery > 7) {
+    currentGallery = 1;
+  }
+  currentBox.innerText = currentGallery;
+}
+
+function onPrev() {
+  currentGallery -= 1;
+  if (currentGallery < 1) {
+    currentGallery = 7;
+  }
+  currentBox.innerText = currentGallery;
+}
+
+function onSwitch(index) {
+  currentGallery = index;
+  currentBox.innerText = index;
+}
 
 // Раскрытие документов
 (function open_block() {

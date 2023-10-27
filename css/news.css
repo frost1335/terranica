@@ -61,7 +61,7 @@
 .wrapper main#news-content .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 24px;
+  gap: 40px 70px;
   margin-bottom: 30px;
 }
 .wrapper main#news-content .content .news-card {

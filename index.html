@@ -188,7 +188,7 @@
               Новый гибридный гусеничный вездеход
             </span>
             <h1 class="h-mid__h1-title mt-4">terranica expedition</h1>
-            <a href="#" class="h-mid__button">
+            <a href="#three_model" class="h-mid__button">
               <img src="img/h-ico.svg" alt="" />
               <img src="img/h-ico-2.svg" alt="" />
               <span>Смотреть в 3D</span>
@@ -204,12 +204,21 @@
                 />
               </div>
               <div class="video__content">
-                <img src="./img/home/float-bg.jpg" alt="video-bg" />
+                <video
+                  width="294"
+                  height="164"
+                  muted="muted"
+                  data-interval="true"
+                  autoplay
+                  id="home-corner-video"
+                >
+                  <source src="./img/home/corner-video.mp4" type="video/mp4" />
+                </video>
               </div>
               <div class="video-controllers">
-                <!-- <button>
+                <button id="corner-play">
                   <img src="./assets/icons/pause.svg" alt="" />
-                </button> -->
+                </button>
                 <!-- <button>
                   <img src="./assets/icons/play.svg" alt="" />
                 </button> -->
@@ -220,7 +229,11 @@
       </header>
 
       <!-- Основной контент -->
-      <main class="main" id="home-main"></main>
+      <main class="main" id="home-main">
+        <video muted="muted" data-interval="true" autoplay id="home-main-video">
+          <source src="./img/home/home-main-video.mp4" type="video/mp4" />
+        </video>
+      </main>
 
       <!-- Security -->
       <section id="security">
@@ -514,6 +527,7 @@
                 <button
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="prev"
+                  onclick="onPrev()"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -536,6 +550,7 @@
                 <button
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="next"
+                  onclick="onNext()"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -557,7 +572,7 @@
         <div class="gallery-content">
           <div
             id="carouselExampleIndicators"
-            data-interval="false"
+            data-bs-interval="false"
             class="carousel slide"
             data-bs-ride="carousel"
           >
@@ -617,7 +632,7 @@
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
-              onclick="onSlide('prev')"
+              onclick="onPrev()"
             >
               <span
                 class="carousel-control-prev-icon"
@@ -630,7 +645,7 @@
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
-              onclick="onSlide('next')"
+              onclick="onNext()"
             >
               <span
                 class="carousel-control-next-icon"
@@ -647,6 +662,7 @@
             data-bs-slide-to="0"
             aria-current="true"
             aria-label="Slide 1"
+            onclick="onSwitch(1)"
           >
             <img
               src="./img/home/home-slider/mini/Slide 16_9 - 3-5.jpg"
@@ -659,6 +675,7 @@
             data-bs-slide-to="1"
             aria-current="true"
             aria-label="Slide 2"
+            onclick="onSwitch(2)"
           >
             <img src="./img/home/home-slider/mini/Slide 16_9 - 3.jpg" alt="" />
           </div>
@@ -668,6 +685,7 @@
             data-bs-slide-to="2"
             aria-current="true"
             aria-label="Slide 3"
+            onclick="onSwitch(3)"
           >
             <img
               src="./img/home/home-slider/mini/Slide 16_9 - 3-4.jpg"
@@ -680,6 +698,7 @@
             data-bs-slide-to="3"
             aria-current="true"
             aria-label="Slide 4"
+            onclick="onSwitch(4)"
           >
             <img
               src="./img/home/home-slider/mini/Slide 16_9 - 3-1.jpg"
@@ -692,6 +711,7 @@
             data-bs-slide-to="4"
             aria-current="true"
             aria-label="Slide 5"
+            onclick="onSwitch(5)"
           >
             <img
               src="./img/home/home-slider/mini/Slide 16_9 - 3-6.jpg"
@@ -704,6 +724,7 @@
             data-bs-slide-to="5"
             aria-current="true"
             aria-label="Slide 6"
+            onclick="onSwitch(6)"
           >
             <img
               src="./img/home/home-slider/mini/Slide 16_9 - 3-3.jpg"
@@ -716,6 +737,7 @@
             data-bs-slide-to="6"
             aria-current="true"
             aria-label="Slide 7"
+            onclick="onSwitch(7)"
           >
             <img
               src="./img/home/home-slider/mini/Slide 16_9 - 3-2.jpg"

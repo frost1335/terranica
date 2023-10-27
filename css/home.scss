@@ -19,7 +19,9 @@
       height: 100%;
       border-radius: 11px;
 
-      img {
+      #home-corner-video {
+        width: 100%;
+        height: 100%;
         border-radius: 11px;
       }
     }
@@ -35,11 +37,16 @@
         outline: none;
         background: transparent;
         border: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
 
         img {
           width: 100%;
           height: 100%;
           object-fit: contain;
+          transform: scale(2);
         }
       }
     }
@@ -53,6 +60,11 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0 0;
+
+  #home-main-video {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #security {

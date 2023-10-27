@@ -16,7 +16,9 @@
   height: 100%;
   border-radius: 11px;
 }
-.header #float__video .video__content img {
+.header #float__video .video__content #home-corner-video {
+  width: 100%;
+  height: 100%;
   border-radius: 11px;
 }
 .header #float__video .video-controllers {
@@ -30,11 +32,16 @@
   outline: none;
   background: transparent;
   border: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
 }
 .header #float__video .video-controllers button img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transform: scale(2);
 }
 
 #home-main {
@@ -44,6 +51,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0 0;
+}
+#home-main #home-main-video {
+  width: 100%;
+  height: 100%;
 }
 
 #security {
