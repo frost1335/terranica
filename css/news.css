@@ -1,0 +1,144 @@
+.wrapper header.header .header__top .logo-1 {
+  display: none;
+}
+.wrapper header.header .header__top .logo-2 {
+  display: block;
+}
+.wrapper header.header .header__top .burger-menu span {
+  background-color: #3c3c3c;
+}
+.wrapper main#news-content {
+  margin-top: 80px;
+}
+.wrapper main#news-content .news-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(60, 60, 60, 0.18);
+  margin-bottom: 60px;
+}
+.wrapper main#news-content .news-head h2 {
+  color: var(--Main-color, #007295);
+  font-family: TERRANICA;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 168%;
+  letter-spacing: 1.48px;
+  text-transform: uppercase;
+}
+.wrapper main#news-content .news-head ul.news-badges {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  list-style: none;
+}
+.wrapper main#news-content .news-head ul.news-badges li span {
+  color: rgba(60, 60, 60, 0.18);
+  text-align: center;
+  font-family: Achieve;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.8%;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+.wrapper main#news-content .news-head ul.news-badges li a {
+  color: #9a9c9c;
+  text-align: center;
+  font-family: "BlissPro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.8%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.wrapper main#news-content .news-head ul.news-badges li a.active {
+  color: #007295;
+}
+.wrapper main#news-content .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 24px;
+  margin-bottom: 30px;
+}
+.wrapper main#news-content .content .news-card {
+  display: flex;
+  align-items: start;
+  gap: 27px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(60, 60, 60, 0.18);
+}
+.wrapper main#news-content .content .news-card .card-img {
+  max-width: 195px;
+  width: 100%;
+  height: 169px;
+  border-radius: 28px;
+  padding-top: 9px;
+}
+.wrapper main#news-content .content .news-card .card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 28px;
+  object-fit: cover;
+}
+.wrapper main#news-content .content .news-card .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.wrapper main#news-content .content .news-card .card-info h3 {
+  color: var(--Main-color, #007295);
+  font-family: "BlissPro", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106.8%;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.wrapper main#news-content .content .news-card .card-info span {
+  color: var(--Gray, #3c3c3c);
+  font-family: "BlissPro", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 131.8%;
+  margin-bottom: 13px;
+}
+.wrapper main#news-content .content .news-card .card-info p {
+  color: #8a8a8a;
+  font-family: "BlissPro", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131.8%;
+}
+.wrapper main#news-content .more-button {
+  margin-bottom: 56px;
+  text-align: center;
+}
+.wrapper main#news-content .more-button button {
+  padding: 16px 45px;
+  border-radius: 7.883px;
+  border: 1px solid var(--Main-color, #007295);
+  color: var(--Main-color, #007295);
+  text-align: center;
+  font-family: "BlissPro", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 134.2%; /* 24.156px */
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  background: transparent;
+  transition: 0.2s;
+}
+.wrapper main#news-content .more-button button:hover {
+  background: var(--Main-color, #007295);
+  color: var(--White, #fff);
+}
+
+/*# sourceMappingURL=news.css.map */

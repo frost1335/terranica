@@ -682,6 +682,7 @@
   font-weight: 400;
   line-height: 120.8%;
   border-radius: 8px;
+  border: 1px solid gba(199, 199, 199, 0.24);
   outline: none;
 }
 #preorder .order-modal form .input-group input::placeholder {

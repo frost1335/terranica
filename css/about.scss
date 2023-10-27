@@ -20,4 +20,16 @@
       padding-top: 80px;
     }
   }
+
+  .overlay {
+    z-index: 150;
+
+    .overlay-container img {
+      width: 35vw;
+    }
+
+    .overlay-close img {
+      width: 35px;
+    }
+  }
 }

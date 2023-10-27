@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dealers.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dealers</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Шапка -->
+      <header class="header">
+        <div class="header__main container">
+          <div
+            class="header__top container pb-4 pt-4 d-flex justify-content-between align-items-center"
+          >
+            <a href="./index.html" class="logo">
+              <img src="img/h-logo-w.svg" alt="" class="logo-1" />
+              <img src="img/logo.svg" alt="" class="logo-2" />
+            </a>
+            <div class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <nav class="header-nav"></nav>
+        </div>
+        <!-- Меню -->
+        <div class="header__menu p-3">
+          <div class="hmenu container">
+            <div class="hmenu__h-contacts">
+              <h3 class="hmenu__h3-title">Контакты</h3>
+              <ul class="hmenu__l-contacts">
+                <li class="l-contacts__item">+7 (980) 900 92 08</li>
+                <li class="l-contacts__item">mailterranica@yandex.ru</li>
+              </ul>
+              <div class="h-menu__h-slinks">
+                <p>
+                  Напишите нам в чат, или мессенджеры, закажите обратный звонок.
+                  Мы отвечаем быстро:
+                </p>
+                <ul class="h-slinks d-flex align-items-center">
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/1.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/2.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/3.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/4.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="hmenu__twork">
+                <li class="twork__item d-flex flex-column">
+                  <span>Режим работы:</span>
+                  Мы работаем ежедневно с 10:00 до 20:00
+                </li>
+                <li class="twork__item d-flex flex-column">
+                  <span>Наш адрес:</span>
+                  Россия, г. Москва, ул. Академика Пилюгина д. 14, корп. 2.
+                </li>
+              </ul>
+              <div
+                class="hmenu__button bterr"
+                id="open-map"
+                onclick="onContactMap()"
+              >
+                Посмотреть на карте
+              </div>
+              <div
+                class="hmenu__button bterr"
+                id="close-map"
+                onclick="onCloseMap()"
+                style="display: none"
+              >
+                закрыть карту
+              </div>
+              <div
+                class="hmenu__subus d-flex align-items-center justify-content-between"
+              >
+                <div class="subus-container">
+                  <p>Подписывайтесь на нас:</p>
+                  <ul class="subus__sul d-flex">
+                    <li class="sul__item">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/youtube.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="sul__item">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/facebook.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="sul__item">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/vk.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="sul__item">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="logos d-flex">
+                  <img src="img/hmenu/lg.png" alt="" />
+                  <span></span>
+                  <img src="img/hmenu/sk.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <span class="h-line"></span>
+            <div class="hmenu__h-menu d-flex justify-content-center">
+              <ul class="hmenu-ul">
+                <li class="hmenu-ul__item">
+                  <a href="#" onclick="onContactMap()" class="hmenu-ul__link">
+                    Контакты
+                  </a>
+                </li>
+                <li class="hmenu-ul__item">
+                  <a href="./about.html" class="hmenu-ul__link"> О компании </a>
+                </li>
+                <li class="hmenu-ul__item">
+                  <a
+                    href="./dealers.html"
+                    class="hmenu-ul__link hmenu-ul--active"
+                  >
+                    Дилеры
+                  </a>
+                </li>
+                <li class="hmenu-ul__item">
+                  <a href="./become-dealer.html" class="hmenu-ul__link">
+                    Стать дилером
+                  </a>
+                </li>
+                <li class="hmenu-ul__item">
+                  <a href="./support.html" class="hmenu-ul__link">
+                    Поддержка
+                  </a>
+                </li>
+                <li class="hmenu-ul__item">
+                  <a href="./news.html" class="hmenu-ul__link"> новости </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-left">
+              <div class="contact-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1106701.620387492!2d81.17010476058053!3d49.88936274387136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1698398267234!5m2!1sen!2s"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main id="dealer-info">
+        <div class="container">
+          <div class="info-head"><h1>Дилеры</h1></div>
+          <div class="info-content">
+            <div>
+              <p class="content-text">
+                Компания TERRANICA предлагает вашему вниманию оригинальную
+                вездеходную технику, созданную для тех, кто знает цену победы и
+                пьянящий вкус азарта.
+              </p>
+              <p class="content-text">
+                Приобщиться к этому избранному кругу можете и вы, ведь купить
+                болотоход или вездеход от TERRANICA можно в одном из восьми
+                дилерских центров компании, находящихся в Москве, Петербурге,
+                Чите, Салехарде, Костроме, Иркутске, Якутске, Тюмени и штате
+                Джорджия (США).
+              </p>
+            </div>
+            <div>
+              <p class="content-text">
+                Все дилеры являются крупными компаниями, не первый год
+                работающими в сфере вездеходной техники и подтвердившими свою
+                надежность и профессионализм годами безупречной работы, поэтому
+                сотрудничество с ними открывает новые горизонты для каждого
+                поклонника экстрима по-русски!
+              </p>
+              <div class="content-img">
+                <img src="./img/dealers/content-img.png" alt="content-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Dealer Reference -->
+      <div class="container">
+        <section id="reference">
+          <div class="half-content">
+            <div class="quarter-content">
+              <h3><a href="#">Глобал терраника</a></h3>
+              <p>Город Чита, ул. Строителей вл. 1 стр. 17</p>
+              <h5>8 (800) 555 67 03</h5>
+            </div>
+            <span> </span>
+            <div class="quarter-content">
+              <h3><a href="#">Астрон марин</a></h3>
+              <p>Город Чита, ул. Строителей вл. 1 стр. 17</p>
+              <h5>8 (812) 715 17 57</h5>
+              <h5>www.astron-marine.ru</h5>
+            </div>
+          </div>
+          <span></span>
+          <div class="half-content">
+            <div class="quarter-content">
+              <h3><a href="#">dexter</a></h3>
+              <p>Москва МКАД, 78 километр, д. 14, корп. 1</p>
+              <h4><a href="#">www. rosvedehod.ru</a></h4>
+            </div>
+            <span> </span>
+            <div class="quarter-content">
+              <h3><a href="#">центр активного отдыха «полярная звезда»</a></h3>
+              <p>Город Салехард, ул. Строителей вл. 1 стр. 17</p>
+              <div class="d-flex gap-5">
+                <h5>8 (34922) 72627</h5>
+                <h5>+7 (922) 098 00 88</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Delaer map -->
+      <section id="dealer-map">
+        <div class="container dealer-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d45953013.381974086!2d69.65151731980835!3d45.33368365483282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1698402506634!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__main container">
+          <div class="footer__top">
+            <img src="img/f-logo.svg" alt="" class="logo" />
+          </div>
+          <div
+            class="footer__mid d-flex justify-content-between align-items-center"
+          >
+            <div class="f-mid-block">
+              <ul class="f-mid__ul mt-4">
+                <li class="f-mid__item">+7 (980) 900 92 08</li>
+                <li class="f-mid__item">mailterranica@yandex.ru</li>
+              </ul>
+              <div class="f-mid-block__social">
+                <p class="f-mid__subtitle">
+                  Напишите нам в чат, или мессенджеры, закажите обратный звонок.
+                  Мы отвечаем быстро:
+                </p>
+                <ul class="socials-l d-flex">
+                  <li class="socials-l__item">
+                    <a href="#" class="social-l__link">
+                      <img src="img/f-icons/1.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="socials-l__item">
+                    <a href="#" class="social-l__link">
+                      <img src="img/f-icons/2.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="socials-l__item">
+                    <a href="#" class="social-l__link">
+                      <img src="img/f-icons/3.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="socials-l__item">
+                    <a href="#" class="social-l__link">
+                      <img src="img/f-icons/4.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="f-mid-block">
+              <ul class="f-mid-block__f-contacts">
+                <li class="f-contacts__item">
+                  <span>Наш адрес:</span>
+                  <span href="#" class="f-contacts__link d-flex flex-column">
+                    <p>
+                      Россия, г. Москва, ул. Академика<br />
+                      Пилюгина д. 14, корп. 2.
+                    </p>
+                  </span>
+                </li>
+                <li class="f-contacts__item">
+                  <span>Режим работы:</span>
+                  <span href="#" class="f-contacts__link d-flex flex-column">
+                    <p>Мы работаем ежедневно с 10:00 до 20:00</p>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="f-mid-block d-flex flex-column">
+              <div class="f-mid-icon align-self-end">
+                <img src="img/sk.png" alt="" />
+              </div>
+              <div class="f-mid-list">
+                <div class="f-mid-list__title">
+                  <span class="f-mid-title"> Подписывайтесь на нас: </span>
+                  <ul
+                    class="s-list d-flex justify-content-between align-items-center"
+                  >
+                    <li class="s-list__item">
+                      <a href="#" class="s-list__link">
+                        <img src="img/youtube.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="s-list__item">
+                      <a href="#" class="s-list__link">
+                        <img src="img/facebook.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="s-list__item">
+                      <a href="#" class="s-list__link">
+                        <img src="img/vk.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="s-list__item">
+                      <a href="#" class="s-list__link">
+                        <img src="img/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p class="f-bottom__p">
+              ООО «Глобал Терраника». Правовая информация. Вся представленная на
+              сайте информация, касающаяся вездеходных машин, программ
+              лояльности, акций, сервисного обслуживания, носит информационный
+              характер и не является публичной офертой, определяемой положениями
+              ст.437 п.2 ГК РФ. Все цены указанные на данном сайте носят
+              информационный характер. Для получения подробной информации
+              просьба обращаться к ближайшему официальному дилеру TERRANICA.
+              Опубликованная на данном сайте информация может быть изменена в
+              любое время без предварительного уведомления.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Скрипты -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -214,7 +214,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.75);
   top: 0;
   bottom: 0;
   left: 0;
@@ -258,7 +258,7 @@ body {
 }
 
 .h-main {
-  background: url("../img/header-screen.jpg") no-repeat;
+  background: url("../img/header-screen.png") no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh !important;
@@ -357,7 +357,7 @@ body {
 }
 
 .hmenu {
-  margin-top: 80px;
+  margin-top: 150px;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
@@ -454,10 +454,43 @@ body {
 .hmenu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  overflow: hidden;
+
+  .contact-left {
+    position: absolute;
+    left: calc(50% + 1px);
+    bottom: 0;
+    top: 20vh;
+    right: 0;
+    width: 50vw;
+    margin-top: -80px;
+    display: none;
+
+    &.open {
+      display: block;
+    }
+
+    .contact-map {
+      width: 100%;
+      height: 100%;
+
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
 .hmenu__h-menu {
   padding-left: 100px;
+
+  display: none;
+
+  &.open {
+    display: block;
+  }
 }
 
 .h-line {
@@ -472,12 +505,13 @@ body {
 
 .hmenu__h-contacts {
   padding-right: 100px;
+  height: 100%;
 }
 
 .hmenu-ul {
   list-style: none;
   padding: 0;
-  line-height: 57px;
+  line-height: 65px;
 }
 
 .hmenu-ul__link {
@@ -541,18 +575,75 @@ body {
 }
 
 .f-mid__item {
-  font-size: 25px;
+  color: var(--White, #fff);
+  text-shadow: 0px 4px 4px rgba(150, 223, 255, 0.2);
+  font-family: "BlissPro", sans-serif;
+  font-size: 25.716px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.8%;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-bottom: 3.5px;
+
+  &:hover {
+    color: #007295;
+  }
 }
 
 .f-mid__subtitle {
+  max-width: 390px;
+  color: #777;
+  font-family: "BlissPro", sans-serif;
   font-size: 18px;
-  color: #777777;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120.8%;
 }
 
 .socials-l {
   list-style: none;
   padding: 0;
   margin-top: 30px;
+
+  span {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.2s all;
+  }
+
+  .mail {
+    background-image: url(../img/footer/mail.svg);
+
+    &:hover {
+      background-image: url(../img/footer/mail-h.svg);
+    }
+  }
+  .telegram {
+    background-image: url(../img/footer/telegram.svg);
+
+    &:hover {
+      background-image: url(../img/footer/telegram-h.svg);
+    }
+  }
+  .whatsapp {
+    background-image: url(../img/footer/whatsapp.svg);
+
+    &:hover {
+      background-image: url(../img/footer/whatsapp-h.svg);
+    }
+  }
+  .phone {
+    background-image: url(../img/footer/phone.svg);
+
+    &:hover {
+      background-image: url(../img/footer/phone-h.svg);
+    }
+  }
 }
 
 .socials-l__item:not(:first-child) {
@@ -582,6 +673,55 @@ body {
 .s-list {
   list-style: none;
   padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+
+  .s-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.2s all;
+  }
+
+  .youtube {
+    background-image: url(../img/footer/youtube.svg);
+
+    &:hover {
+      background-image: url(../img/footer/youtube-h.svg);
+    }
+  }
+  .facebook {
+    background-image: url(../img/footer/facebook.svg);
+
+    &:hover {
+      background-image: url(../img/footer/facebook-h.svg);
+    }
+  }
+  .vk {
+    background-image: url(../img/footer/vk.svg);
+
+    &:hover {
+      background-image: url(../img/footer/vk-h.svg);
+    }
+  }
+  .instagram {
+    background-image: url(../img/footer/instagram.svg);
+    margin-left: 5px;
+
+    &:hover {
+      background-image: url(../img/footer/instagram-h.svg);
+    }
+  }
 }
 
 .s-list__item:not(:first-child) {
@@ -601,12 +741,15 @@ body {
 .footer__bottom {
   border-top: 1px solid #8d8d8d;
   padding-top: 40px;
-  padding-bottom: 20px;
 }
 
 .f-bottom__p {
-  color: #fff;
-  opacity: 0.5;
+  color: #4f4f4f;
+  font-family: "BlissPro", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.2%; /* 18.788px */
 }
 
 /* END FOOTER */

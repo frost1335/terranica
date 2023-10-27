@@ -1,0 +1,163 @@
+.wrapper {
+  header.header {
+    .header__top {
+      .logo-1 {
+        display: none;
+      }
+
+      .logo-2 {
+        display: block;
+      }
+
+      .burger-menu span {
+        background-color: #3c3c3c;
+      }
+    }
+  }
+
+  main#dealer-info {
+    padding-top: 90px;
+
+    .info-head {
+      h1 {
+        color: var(--Main-color, #007295);
+        font-family: TERRANICA;
+        font-size: 37px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 168%;
+        letter-spacing: 1.48px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(60, 60, 60, 0.18);
+        padding-bottom: 10px;
+      }
+    }
+
+    .info-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 100px;
+      padding-top: 53px;
+      margin-bottom: 88px;
+      position: relative;
+
+      & > div {
+        gap: 30px;
+      }
+
+      .content-text {
+        color: #8a8a8a;
+        font-family: "BlissPro", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.35px;
+      }
+
+      .content-img {
+        max-width: 210px;
+        position: absolute;
+        right: 70px;
+        bottom: -100px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #reference {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    margin-bottom: 50px;
+
+    gap: 35px;
+
+    span {
+      width: 1px;
+      height: 100%;
+      background: rgba(60, 60, 60, 0.18);
+    }
+
+    .half-content {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        height: 1px;
+        width: 100%;
+        background: rgba(60, 60, 60, 0.18);
+        margin-bottom: 40px;
+      }
+
+      .quarter-content {
+        margin-bottom: 15px;
+
+        h3 a {
+          color: var(--Main-color, #007295);
+          font-family: "BlissPro", sans-serif;
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 98.3%;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+          text-decoration: none;
+        }
+
+        p {
+          color: #9a9c9c;
+          font-family: "BlissPro", sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120.8%;
+          margin-bottom: 16px;
+        }
+
+        h5 {
+          color: #9a9c9c;
+          font-family: "BlissPro", sans-serif;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 120.8%;
+        }
+
+        h4 a {
+          color: var(--Main-color, #007295);
+          font-family: "BlissPro", sans-serif;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 120.8%;
+          text-decoration: none;
+          transition: 0.2s all;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  #dealer-map {
+    margin-bottom: 64px;
+
+    .dealer-container {
+      padding: 0 !important;
+      border-radius: 38px;
+      border: 1px solid rgba(60, 60, 60, 0.18);
+
+      iframe {
+        min-height: 490px;
+        width: 100%;
+        height: 100%;
+        border-radius: 38px;
+      }
+    }
+  }
+}

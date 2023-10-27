@@ -49,3 +49,27 @@
     }
   });
 })();
+
+function onContactMap() {
+  const menu = document.querySelector(".hmenu__h-menu");
+  const contactMap = document.querySelector(".contact-left");
+  const openBtn = document.getElementById("open-map");
+  const closeBtn = document.getElementById("close-map");
+
+  menu.classList.remove("open");
+  contactMap.classList.add("open");
+  openBtn.style.display = "none";
+  closeBtn.style.display = "inline-block";
+}
+
+function onCloseMap() {
+  const menu = document.querySelector(".hmenu__h-menu");
+  const contactMap = document.querySelector(".contact-left");
+  const openBtn = document.getElementById("open-map");
+  const closeBtn = document.getElementById("close-map");
+
+  menu.classList.add("open");
+  contactMap.classList.remove("open");
+  openBtn.style.display = "inline-block";
+  closeBtn.style.display = "none";
+}

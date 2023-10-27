@@ -10,5 +10,14 @@
 .wrapper main.main .about {
   padding-top: 80px;
 }
+.wrapper .overlay {
+  z-index: 150;
+}
+.wrapper .overlay .overlay-container img {
+  width: 35vw;
+}
+.wrapper .overlay .overlay-close img {
+  width: 35px;
+}
 
 /*# sourceMappingURL=about.css.map */
