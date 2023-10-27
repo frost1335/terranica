@@ -11,12 +11,9 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
-  0.1,
+  0.5,
   1000
 );
-
-let mouseX = window.innerWidth / 2;
-let mouseY = window.innerHeight / 2;
 
 let object;
 
@@ -47,10 +44,12 @@ renderer.setSize(container.clientWidth, container.clientHeight);
 
 container.appendChild(renderer.domElement);
 
-camera.position.z = objToRender === "car" ? 200 : 500;
+camera.position.z = 130;
+camera.position.y = 50;
+camera.position.x = 110
 
 const topLight = new THREE.DirectionalLight(0xffffff, 1);
-topLight.position.set(500, 500, 500);
+topLight.position.set(300, 300, 300);
 topLight.castShadow = true;
 scene.add(topLight);
 
@@ -58,15 +57,12 @@ const ambientLight = new THREE.AmbientLight(0x333333, 5);
 scene.add(ambientLight);
 
 controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false; // Disable zoom.
+camera.lookAt(0, 0, 0);
 
 function animate() {
   requestAnimationFrame(animate);
 
-  if (object && objToRender === "car") {
-    //I've played with the constants here until it looked good
-    object.rotation.y = -3 + (mouseX / window.innerWidth) * 3;
-    object.rotation.x = -1.2 + (mouseY * 2.5) / window.innerHeight;
-  }
   renderer.render(scene, camera);
 }
 
@@ -76,9 +72,6 @@ window.addEventListener("resize", (e) => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-document.onmousemove = (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-};
+controls.addEventListener("change", renderer);
 
 animate();
