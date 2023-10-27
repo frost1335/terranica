@@ -22,6 +22,7 @@
   text-transform: uppercase;
 }
 .wrapper main.main .support .support__p {
+  padding-right: 200px;
   color: rgba(255, 255, 255, 0.62);
   font-family: "BlissPro", sans-serif;
   font-size: 18px;

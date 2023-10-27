@@ -8,7 +8,7 @@
   background-color: #3c3c3c;
 }
 .wrapper main#dealer-info {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 .wrapper main#dealer-info .info-head h1 {
   color: var(--Main-color, #007295);
