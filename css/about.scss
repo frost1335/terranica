@@ -1,0 +1,23 @@
+.wrapper {
+  header.header {
+    .header__top {
+      .logo-1 {
+        display: none;
+      }
+
+      .logo-2 {
+        display: block;
+      }
+
+      .burger-menu span {
+        background-color: #3c3c3c;
+      }
+    }
+  }
+
+  main.main {
+    .about {
+      padding-top: 80px;
+    }
+  }
+}

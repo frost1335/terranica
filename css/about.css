@@ -1,0 +1,14 @@
+.wrapper header.header .header__top .logo-1 {
+  display: none;
+}
+.wrapper header.header .header__top .logo-2 {
+  display: block;
+}
+.wrapper header.header .header__top .burger-menu span {
+  background-color: #3c3c3c;
+}
+.wrapper main.main .about {
+  padding-top: 80px;
+}
+
+/*# sourceMappingURL=about.css.map */
