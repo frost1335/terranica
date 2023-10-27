@@ -109,7 +109,7 @@
           <span class="h-line"></span>
           <div class="hmenu__h-menu d-flex justify-content-center">
             <ul class="hmenu-ul">
-              <li class="hmenu-ul__item">
+              <li class="hmenu-ul__item hmenu-ul--active">
                 <a href="./contacts.html" class="hmenu-ul__link"> Контакты </a>
               </li>
               <li class="hmenu-ul__item">
@@ -136,7 +136,7 @@
       <header class="header h-main">
         <div class="header__main container">
           <div
-            class="header__top pb-4 pt-4 d-flex justify-content-between align-items-center"
+            class="header__top container pb-4 pt-4 d-flex justify-content-between align-items-center"
           >
             <a href="./index.html" class="logo">
               <img src="img/h-logo-w.svg" alt="" class="logo-1" />
@@ -189,7 +189,7 @@
       </header>
 
       <!-- Основной контент -->
-      <main class="main"></main>
+      <main class="main" id="home-main"></main>
 
       <!-- Security -->
       <section id="security">
@@ -360,43 +360,101 @@
         </p>
         <div class="colors">
           <button class="active">
-            <span style="background: #b9211b"></span>
+            <div class="color-box">
+              <span style="background: #b9211b"></span>
+            </div>
             <h5>red</h5>
           </button>
           <button>
-            <span style="background: #e0541c"></span>
+            <div class="color-box">
+              <span style="background: #e0541c"></span>
+            </div>
             <h5>orange</h5>
           </button>
           <button>
-            <span style="background: #ffcc40"></span>
+            <div class="color-box">
+              <span style="background: #ffcc40"></span>
+            </div>
             <h5>yellow</h5>
           </button>
           <button>
-            <span style="background: #108253"></span>
+            <div class="color-box">
+              <span style="background: #108253"></span>
+            </div>
             <h5>dark green</h5>
           </button>
           <button>
-            <span style="background: #0b5c8a"></span>
+            <div class="color-box">
+              <span style="background: #0b5c8a"></span>
+            </div>
             <h5>midnight</h5>
           </button>
           <button>
-            <span style="background: #fff"></span>
+            <div class="color-box">
+              <span style="background: #fff"></span>
+            </div>
             <h5>white</h5>
           </button>
           <button>
-            <span style="background: #42ac51"></span>
+            <div class="color-box">
+              <span style="background: #42ac51"></span>
+            </div>
             <h5>green</h5>
           </button>
           <button>
-            <span style="background: #242323"></span>
+            <div class="color-box">
+              <span style="background: #242323"></span>
+            </div>
             <h5>dark</h5>
           </button>
           <button>
-            <span style="background: #b27d2d"></span>
+            <div class="color-box">
+              <span style="background: #b27d2d"></span>
+            </div>
             <h5>gold</h5>
           </button>
         </div>
         <div class="three-model">
+          <div class="bg-img">
+            <img src="./img/home/three-bg.png" alt="three-model-img" />
+          </div>
+          <div class="bg-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1297"
+              height="283"
+              viewBox="0 0 1297 283"
+              fill="none"
+            >
+              <g opacity="0.5">
+                <mask
+                  id="path-1-outside-1_1_242"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="-0.00891113"
+                  width="1297"
+                  height="283"
+                  fill="black"
+                >
+                  <rect
+                    fill="white"
+                    y="-0.00891113"
+                    width="1297"
+                    height="283"
+                  />
+                  <path
+                    d="M55.5239 1.99109H184.648L180.186 27.0687H130.846L119.036 93.8985H88.5923L100.402 27.0687H51.0623L55.5239 1.99109ZM321.752 1.99109L317.816 24.3115H227.534L225.172 37.5724H310.205L306.924 56.4791H221.76L219.135 71.5781H310.73L306.793 93.8985H184.755L201.026 1.99109H321.752ZM341.036 1.99109H446.54C463.205 1.99109 470.16 10.3941 467.273 27.2L465.174 39.6731C463.73 48.0761 460.975 53.9844 457.038 57.2668C453.101 60.5493 446.934 62.2561 438.535 62.2561L436.567 62.7813L458.088 93.8985H423.576L403.761 64.3568H360.588L355.208 93.8985H324.764L341.036 1.99109ZM435.123 37.1785L436.436 30.0885C437.354 24.7054 435.648 22.8672 430.268 22.8672H367.806L364.131 44.1372H427.119C432.499 44.1372 434.205 42.5617 435.123 37.1785ZM491.554 1.99109H597.058C613.723 1.99109 620.678 10.3941 617.791 27.2L615.692 39.6731C614.248 48.0761 611.492 53.9844 607.556 57.2668C603.619 60.5493 597.451 62.2561 589.053 62.2561L587.085 62.7813L608.605 93.8985H574.094L554.279 64.3568H511.106L505.726 93.8985H475.282L491.554 1.99109ZM585.641 37.1785L586.954 30.0885C587.872 24.7054 586.166 22.8672 580.786 22.8672H518.323L514.649 44.1372H577.637C583.017 44.1372 584.723 42.5617 585.641 37.1785ZM770.314 93.8985H736.59L729.897 78.143H665.335L653 93.8985H616.914L692.761 1.99109H727.01L770.314 93.8985ZM707.064 24.8367L681.738 57.1355H720.843L707.064 24.8367ZM896.203 62.5187L906.832 1.99109H936.226L919.954 93.8985H895.022L824.292 32.4518L813.401 93.8985H784.007L800.278 1.99109H826.392L896.203 62.5187ZM941.716 93.8985L957.988 1.99109H988.825L972.554 93.8985H941.716ZM1101.53 93.8985H1020.95C1002.98 93.8985 994.841 84.3139 998.122 66.0637L1004.95 27.2C1008.23 8.9498 1016.62 1.99109 1034.6 1.99109H1115.17C1133.15 1.99109 1141.29 11.5757 1138.01 29.8259L1136.3 40.1983H1106.77L1107.96 34.29C1109.01 28.1191 1107.04 25.6244 1100.74 25.6244H1043.92C1037.62 25.6244 1035.39 27.5939 1034.21 33.7648L1029.22 61.5996C1028.17 67.7705 1030.14 70.2652 1036.44 70.2652H1093.26C1099.56 70.2652 1101.79 68.2957 1102.97 62.1248L1104.15 54.7722H1133.54L1131.18 68.6896C1127.9 86.9398 1119.5 93.8985 1101.53 93.8985ZM1286.14 93.8985H1252.42L1245.72 78.143H1181.16L1168.83 93.8985H1132.74L1208.59 1.99109H1242.84L1286.14 93.8985ZM1222.89 24.8367L1197.57 57.1355H1236.67L1222.89 24.8367ZM138.998 189.174L135.061 211.494H44.7789L42.4169 224.755H127.45L124.169 243.662H39.0051L36.3806 258.761H127.975L124.038 281.081H2L18.2717 189.174H138.998ZM178.883 281.081H135.973L195.418 234.208L153.557 189.174H193.318L218.119 216.746L251.844 189.174H294.754L236.884 234.208L279.795 281.081H240.034L214.183 251.671L178.883 281.081ZM325.278 281.081H294.834L311.106 189.174H416.61C433.275 189.174 440.23 197.577 437.343 214.383L434.194 232.239C432.75 240.642 430.126 246.55 426.189 249.833C422.252 253.115 416.085 254.822 407.686 254.822H330.002L325.278 281.081ZM337.613 211.1L333.676 233.946H396.795C402.044 233.946 403.75 232.37 404.668 226.987L406.243 218.322C407.162 212.938 405.456 211.1 400.076 211.1H337.613ZM580.555 189.174L576.619 211.494H486.337L483.975 224.755H569.008L565.727 243.662H480.563L477.938 258.761H569.533L565.596 281.081H443.558L459.829 189.174H580.555ZM688.546 281.081H583.567L599.839 189.174H701.144C711.642 189.174 719.515 192.325 724.764 198.496C730.013 204.798 731.719 213.201 729.751 223.836L725.027 250.095C721.221 271.628 709.936 281.081 688.546 281.081ZM626.084 213.201L618.342 257.054H683.429C690.646 257.054 694.058 254.166 695.239 246.944L699.175 224.23C700.488 216.877 697.47 213.201 690.121 213.201H626.084ZM740.252 281.081L756.523 189.174H787.361L771.089 281.081H740.252ZM804.268 189.174H933.393L928.931 214.251H879.591L867.781 281.081H837.337L849.147 214.251H799.807L804.268 189.174ZM934.155 281.081L950.427 189.174H981.265L964.993 281.081H934.155ZM1097.64 281.081H1013.39C995.416 281.081 987.28 271.497 990.561 253.246L997.385 214.383C1000.67 196.133 1009.06 189.174 1027.04 189.174H1111.29C1129.26 189.174 1137.4 198.758 1134.12 217.009L1127.3 255.872C1124.02 274.123 1115.62 281.081 1097.64 281.081ZM1029.01 257.054H1088.45C1094.75 257.054 1096.98 255.085 1098.03 248.782L1102.89 221.998C1103.94 215.696 1101.97 213.201 1095.67 213.201H1036.23C1029.93 213.201 1027.7 215.171 1026.65 221.473L1021.79 248.257C1020.74 254.559 1022.71 257.054 1029.01 257.054ZM1254.98 249.701L1265.61 189.174H1295L1278.73 281.081H1253.8L1183.07 219.635L1172.17 281.081H1142.78L1159.05 189.174H1185.17L1254.98 249.701Z"
+                  />
+                </mask>
+                <path
+                  d="M55.5239 1.99109H184.648L180.186 27.0687H130.846L119.036 93.8985H88.5923L100.402 27.0687H51.0623L55.5239 1.99109ZM321.752 1.99109L317.816 24.3115H227.534L225.172 37.5724H310.205L306.924 56.4791H221.76L219.135 71.5781H310.73L306.793 93.8985H184.755L201.026 1.99109H321.752ZM341.036 1.99109H446.54C463.205 1.99109 470.16 10.3941 467.273 27.2L465.174 39.6731C463.73 48.0761 460.975 53.9844 457.038 57.2668C453.101 60.5493 446.934 62.2561 438.535 62.2561L436.567 62.7813L458.088 93.8985H423.576L403.761 64.3568H360.588L355.208 93.8985H324.764L341.036 1.99109ZM435.123 37.1785L436.436 30.0885C437.354 24.7054 435.648 22.8672 430.268 22.8672H367.806L364.131 44.1372H427.119C432.499 44.1372 434.205 42.5617 435.123 37.1785ZM491.554 1.99109H597.058C613.723 1.99109 620.678 10.3941 617.791 27.2L615.692 39.6731C614.248 48.0761 611.492 53.9844 607.556 57.2668C603.619 60.5493 597.451 62.2561 589.053 62.2561L587.085 62.7813L608.605 93.8985H574.094L554.279 64.3568H511.106L505.726 93.8985H475.282L491.554 1.99109ZM585.641 37.1785L586.954 30.0885C587.872 24.7054 586.166 22.8672 580.786 22.8672H518.323L514.649 44.1372H577.637C583.017 44.1372 584.723 42.5617 585.641 37.1785ZM770.314 93.8985H736.59L729.897 78.143H665.335L653 93.8985H616.914L692.761 1.99109H727.01L770.314 93.8985ZM707.064 24.8367L681.738 57.1355H720.843L707.064 24.8367ZM896.203 62.5187L906.832 1.99109H936.226L919.954 93.8985H895.022L824.292 32.4518L813.401 93.8985H784.007L800.278 1.99109H826.392L896.203 62.5187ZM941.716 93.8985L957.988 1.99109H988.825L972.554 93.8985H941.716ZM1101.53 93.8985H1020.95C1002.98 93.8985 994.841 84.3139 998.122 66.0637L1004.95 27.2C1008.23 8.9498 1016.62 1.99109 1034.6 1.99109H1115.17C1133.15 1.99109 1141.29 11.5757 1138.01 29.8259L1136.3 40.1983H1106.77L1107.96 34.29C1109.01 28.1191 1107.04 25.6244 1100.74 25.6244H1043.92C1037.62 25.6244 1035.39 27.5939 1034.21 33.7648L1029.22 61.5996C1028.17 67.7705 1030.14 70.2652 1036.44 70.2652H1093.26C1099.56 70.2652 1101.79 68.2957 1102.97 62.1248L1104.15 54.7722H1133.54L1131.18 68.6896C1127.9 86.9398 1119.5 93.8985 1101.53 93.8985ZM1286.14 93.8985H1252.42L1245.72 78.143H1181.16L1168.83 93.8985H1132.74L1208.59 1.99109H1242.84L1286.14 93.8985ZM1222.89 24.8367L1197.57 57.1355H1236.67L1222.89 24.8367ZM138.998 189.174L135.061 211.494H44.7789L42.4169 224.755H127.45L124.169 243.662H39.0051L36.3806 258.761H127.975L124.038 281.081H2L18.2717 189.174H138.998ZM178.883 281.081H135.973L195.418 234.208L153.557 189.174H193.318L218.119 216.746L251.844 189.174H294.754L236.884 234.208L279.795 281.081H240.034L214.183 251.671L178.883 281.081ZM325.278 281.081H294.834L311.106 189.174H416.61C433.275 189.174 440.23 197.577 437.343 214.383L434.194 232.239C432.75 240.642 430.126 246.55 426.189 249.833C422.252 253.115 416.085 254.822 407.686 254.822H330.002L325.278 281.081ZM337.613 211.1L333.676 233.946H396.795C402.044 233.946 403.75 232.37 404.668 226.987L406.243 218.322C407.162 212.938 405.456 211.1 400.076 211.1H337.613ZM580.555 189.174L576.619 211.494H486.337L483.975 224.755H569.008L565.727 243.662H480.563L477.938 258.761H569.533L565.596 281.081H443.558L459.829 189.174H580.555ZM688.546 281.081H583.567L599.839 189.174H701.144C711.642 189.174 719.515 192.325 724.764 198.496C730.013 204.798 731.719 213.201 729.751 223.836L725.027 250.095C721.221 271.628 709.936 281.081 688.546 281.081ZM626.084 213.201L618.342 257.054H683.429C690.646 257.054 694.058 254.166 695.239 246.944L699.175 224.23C700.488 216.877 697.47 213.201 690.121 213.201H626.084ZM740.252 281.081L756.523 189.174H787.361L771.089 281.081H740.252ZM804.268 189.174H933.393L928.931 214.251H879.591L867.781 281.081H837.337L849.147 214.251H799.807L804.268 189.174ZM934.155 281.081L950.427 189.174H981.265L964.993 281.081H934.155ZM1097.64 281.081H1013.39C995.416 281.081 987.28 271.497 990.561 253.246L997.385 214.383C1000.67 196.133 1009.06 189.174 1027.04 189.174H1111.29C1129.26 189.174 1137.4 198.758 1134.12 217.009L1127.3 255.872C1124.02 274.123 1115.62 281.081 1097.64 281.081ZM1029.01 257.054H1088.45C1094.75 257.054 1096.98 255.085 1098.03 248.782L1102.89 221.998C1103.94 215.696 1101.97 213.201 1095.67 213.201H1036.23C1029.93 213.201 1027.7 215.171 1026.65 221.473L1021.79 248.257C1020.74 254.559 1022.71 257.054 1029.01 257.054ZM1254.98 249.701L1265.61 189.174H1295L1278.73 281.081H1253.8L1183.07 219.635L1172.17 281.081H1142.78L1159.05 189.174H1185.17L1254.98 249.701Z"
+                  stroke="white"
+                  stroke-width="2.25654"
+                  mask="url(#path-1-outside-1_1_242)"
+                />
+              </g>
+            </svg>
+          </div>
           <img src="./img/home/NEO terranica.png" alt="3d model img" />
         </div>
         <div class="model-angle">
@@ -440,9 +498,9 @@
                   </svg>
                 </button>
                 <div class="show">
-                  <h4 class="m-0">1</h4>
+                  <h4 class="m-0" id="gallery-current">1</h4>
                   <span>/</span>
-                  <h5 class="m-0">5</h5>
+                  <h5 class="m-0">7</h5>
                 </div>
                 <button
                   data-bs-target="#carouselExampleIndicators"
@@ -468,55 +526,56 @@
         <div class="gallery-content">
           <div
             id="carouselExampleIndicators"
+            data-interval="false"
             class="carousel slide"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-1.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-2.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-3.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-4.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-5.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-6.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item gallery-picture">
                 <img
-                  src="./img/home/slide-main.jpg"
+                  src="./img/home/home-slider/source/slide-7.jpg"
                   class="d-block w-100"
                   alt="gallery-img"
                 />
@@ -527,6 +586,7 @@
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev"
+              onclick="onSlide('prev')"
             >
               <span
                 class="carousel-control-prev-icon"
@@ -539,6 +599,7 @@
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next"
+              onclick="onSlide('next')"
             >
               <span
                 class="carousel-control-next-icon"
@@ -556,7 +617,10 @@
             aria-current="true"
             aria-label="Slide 1"
           >
-            <img src="./img/home/Slide 16_9 - 3.jpg" alt="" />
+            <img
+              src="./img/home/home-slider/mini/Slide 16_9 - 3-5.jpg"
+              alt=""
+            />
           </div>
           <div
             class="gallery-item"
@@ -565,7 +629,7 @@
             aria-current="true"
             aria-label="Slide 2"
           >
-            <img src="./img/home/Slide 16_9 - 3-1.jpg" alt="" />
+            <img src="./img/home/home-slider/mini/Slide 16_9 - 3.jpg" alt="" />
           </div>
           <div
             class="gallery-item"
@@ -574,7 +638,10 @@
             aria-current="true"
             aria-label="Slide 3"
           >
-            <img src="./img/home/Slide 16_9 - 3-2.jpg" alt="" />
+            <img
+              src="./img/home/home-slider/mini/Slide 16_9 - 3-4.jpg"
+              alt=""
+            />
           </div>
           <div
             class="gallery-item"
@@ -583,7 +650,10 @@
             aria-current="true"
             aria-label="Slide 4"
           >
-            <img src="./img/home/Slide 16_9 - 3-3.jpg" alt="" />
+            <img
+              src="./img/home/home-slider/mini/Slide 16_9 - 3-1.jpg"
+              alt=""
+            />
           </div>
           <div
             class="gallery-item"
@@ -592,7 +662,10 @@
             aria-current="true"
             aria-label="Slide 5"
           >
-            <img src="./img/home/Slide 16_9 - 3-4.jpg" alt="" />
+            <img
+              src="./img/home/home-slider/mini/Slide 16_9 - 3-6.jpg"
+              alt=""
+            />
           </div>
           <div
             class="gallery-item"
@@ -601,7 +674,10 @@
             aria-current="true"
             aria-label="Slide 6"
           >
-            <img src="./img/home/Slide 16_9 - 3-5.jpg" alt="" />
+            <img
+              src="./img/home/home-slider/mini/Slide 16_9 - 3-3.jpg"
+              alt=""
+            />
           </div>
           <div
             class="gallery-item"
@@ -610,7 +686,10 @@
             aria-current="true"
             aria-label="Slide 7"
           >
-            <img src="./img/home/Slide 16_9 - 3-6.jpg" alt="" />
+            <img
+              src="./img/home/home-slider/mini/Slide 16_9 - 3-2.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -1336,6 +1415,13 @@
                 />
               </div>
             </div>
+          </div>
+          <div class="model-angle">
+            <button>
+              360&#176;
+
+              <img src="./img/home/rotate-model.png" alt="" />
+            </button>
           </div>
         </div>
       </section>
