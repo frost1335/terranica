@@ -11,7 +11,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
-  0.5,
+  0.1,
   1000
 );
 
@@ -40,18 +40,35 @@ loader.load(
 const renderer = new THREE.WebGLRenderer({ alpha: true });
 
 // size of render scene
+camera.aspect = window.innerWidth / window.innerHeight;
 renderer.setSize(container.clientWidth, container.clientHeight);
 
 container.appendChild(renderer.domElement);
 
-camera.position.z = 130;
-camera.position.y = 50;
-camera.position.x = 110
+camera.position.z = 2.5
+camera.position.y = 2;
+camera.position.x = 3;
 
 const topLight = new THREE.DirectionalLight(0xffffff, 1);
 topLight.position.set(300, 300, 300);
 topLight.castShadow = true;
 scene.add(topLight);
+
+let light = new THREE.PointLight(0xc4c4c4, 10);
+light.position.set(0, 300, 500);
+scene.add(light);
+
+let light2 = new THREE.PointLight(0xc4c4c4, 10);
+light2.position.set(500, 100, 0);
+scene.add(light2);
+
+let light3 = new THREE.PointLight(0xc4c4c4, 10);
+light3.position.set(0, 100, -500);
+scene.add(light3);
+
+let light4 = new THREE.PointLight(0xc4c4c4, 10);
+light4.position.set(-500, 300, 500);
+scene.add(light4);
 
 const ambientLight = new THREE.AmbientLight(0x333333, 5);
 scene.add(ambientLight);

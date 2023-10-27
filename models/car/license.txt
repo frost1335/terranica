@@ -1,11 +1,11 @@
 Model Information:
-* title:	Toyota Land Cruiser
-* source:	https://sketchfab.com/3d-models/toyota-land-cruiser-91b5815c64eb43b0a88f6fdb9df774e4
-* author:	Renafox (https://sketchfab.com/kryik1023)
+* title:	Tesla CyberTruck 6*6 Sahara-Sport SDC
+* source:	https://sketchfab.com/3d-models/tesla-cybertruck-66-sahara-sport-sdc-58045e65735c4dc3871aa2f165c1bf19
+* author:	SDC PERFORMANCE™️ (https://sketchfab.com/3Duae)
 
 Model License:
-* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
-* requirements:	Author must be credited. No commercial use.
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Toyota Land Cruiser" (https://sketchfab.com/3d-models/toyota-land-cruiser-91b5815c64eb43b0a88f6fdb9df774e4) by Renafox (https://sketchfab.com/kryik1023) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+This work is based on "Tesla CyberTruck 6*6 Sahara-Sport SDC" (https://sketchfab.com/3d-models/tesla-cybertruck-66-sahara-sport-sdc-58045e65735c4dc3871aa2f165c1bf19) by SDC PERFORMANCE™️ (https://sketchfab.com/3Duae) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
