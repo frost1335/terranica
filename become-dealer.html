@@ -6,7 +6,7 @@
 
     <!-- Подключение стилей -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/support.css" />
+    <link rel="stylesheet" href="css/dealer.css" />
     <link rel="stylesheet" href="css/adap-mobile.css" />
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Support</title>
+    <title>Become a Dealer</title>
   </head>
   <body>
     <div class="wrapper">
@@ -37,6 +37,7 @@
           </div>
           <nav class="header-nav"></nav>
         </div>
+
         <!-- Меню -->
         <div class="header__menu p-3">
           <div class="hmenu container">
@@ -134,12 +135,12 @@
                 <li class="hmenu-ul__item">
                   <a href="./dealers.html" class="hmenu-ul__link"> Дилеры </a>
                 </li>
-                <li class="hmenu-ul__item">
+                <li class="hmenu-ul__item hmenu-ul--active">
                   <a href="./become-dealer.html" class="hmenu-ul__link">
                     Стать дилером
                   </a>
                 </li>
-                <li class="hmenu-ul__item hmenu-ul--active">
+                <li class="hmenu-ul__item">
                   <a href="./support.html" class="hmenu-ul__link">
                     Поддержка
                   </a>
@@ -154,34 +155,68 @@
       </header>
       <!-- Основной контент -->
       <main class="main">
-        <div class="support container">
-          <div
-            class="support__main d-flex justify-content-between align-items-center"
-          >
-            <div class="support__img">
-              <img src="img/support/img.svg" alt="" />
-              <img src="img/support/img2.svg" alt="" />
-            </div>
-            <div class="support__text">
-              <h3 class="support__h3-title">Клиентский<br />сервис</h3>
-              <div class="support__line"></div>
-              <p class="support__p">
-                Наша компания производит вездеходы, соответствующие высочайшим
-                стандартами качества. Мы искренне надеемся, что, управляя любой
-                машиной бренда TERRANICA, вы получаете удовольствие от вождения.
-                Ставя превыше всего удовлетворенность и безопасность своих
-                клиентов, нами была создана служба сервиса, работающая в режиме
-                24/7.
-              </p>
-              <p class="support__p">
-                Компетентные специалисты предоставят квалифицированную
-                консультацию и помощь в случае возникновения каких-либо
-                проблем.Помимо этого, организован склад, обеспеченный полной
-                номенклатурой всех запасных частей, для сокращения временных
-                издержек по доставке на случай, если вдруг возникнет ситуация,
-                когда отдельные составляющие будут повреждены. Наша цель —
-                сделать эксплуатацию машины максимально комфортной для клиента
-              </p>
+        <div class="dealer">
+          <div class="dealer__main container">
+            <h3 class="dealer__h3-title h3-title">Как стать дилером</h3>
+            <div class="dealer__d-blocks justify-content-between">
+              <div class="d-blocks__d-block">
+                <p>
+                  TERRANICA – это дружная команда конструкторов, инженеров,
+                  техников, дизайнеров и менеджеров. Каждый из нас вносит
+                  неоценимый вклад в дело TERRANICA. Мы очень разные, и все же
+                  нас объединяет дух любви к бездорожью. Мы гордимся большой
+                  семьей TERRANICA и стремимся покорять новые просторы. Мы –
+                  надежные, предсказуемые и обязательные партнеры в бизнесе. Нам
+                  нужны профессионалы, готовые добиваться успеха вместе с нами.
+                </p>
+                <p>
+                  TERRANICA – это особая философия и отношение к работе. Мы
+                  крепко стоим на ногах, ведь в основу мы заложили
+                  непревзойденную технологичность, непрерывное внедрение
+                  новейших разработок и изобретений, мощное сервисное
+                  сопровождение и смелую идею.
+                </p>
+                <p>
+                  Мы всегда стремимся понять интересы и выгоды своих
+                  единомышленников и напрямую заинтересованы в росте продаж,
+                  поэтому стремимся предоставить нашим партнерам лучшие условия
+                  сотрудничества и оказать всевозможную поддержку.
+                </p>
+                <p>
+                  Присоединиться к семье TERRANICA – значит стать частью
+                  динамично развивающегося проекта, в приоритетах которого
+                  высокие стандарты производства и качественное сервисное
+                  обслуживание каждого вездехода Мы верим в безграничность
+                  возможностей и готовы делиться успехом.
+                </p>
+              </div>
+              <div class="d-blocks__d-block">
+                <form class="d-form d-flex flex-column" method="POST">
+                  <h4 class="d-form__h4-title">СТАНЬТЕ ЧАСТЬЮ КОМАНДЫ</h4>
+                  <input
+                    type="text"
+                    placeholder="Контактное лицо"
+                    class="iterr"
+                  />
+                  <input type="text" placeholder="Телефон" class="iterr" />
+                  <input type="email" placeholder="Эл.Почта" class="iterr" />
+                  <textarea
+                    placeholder="Расскажите о себе"
+                    class="iterr"
+                  ></textarea>
+                  <input type="submit" value="Отправить" class="bterr" />
+                  <div class="d-form__check">
+                    <label class="contain-box">
+                      <input type="checkbox" id="form" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label for="form">
+                      Нажимая на кнопку «отправить заявку», я даю согласие на
+                      обработку персональных данных
+                    </label>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -195,7 +230,6 @@
           </button>
         </div>
       </div>
-
       <!-- Footer -->
       <footer class="footer">
         <div class="footer__main container">
