@@ -216,12 +216,12 @@
                 </video>
               </div>
               <div class="video-controllers">
-                <button id="corner-play">
-                  <img src="./assets/icons/pause.svg" alt="" />
+                <button id="corner-pause" class="active">
+                  <img src="./assets/icons/pause.svg" alt="pause-icon" />
                 </button>
-                <!-- <button>
-                  <img src="./assets/icons/play.svg" alt="" />
-                </button> -->
+                <button id="corner-play">
+                  <img src="./assets/icons/play.svg" alt="play-icon" />
+                </button>
               </div>
             </div>
           </div>
@@ -233,6 +233,14 @@
         <video muted="muted" data-interval="true" autoplay id="home-main-video">
           <source src="./img/home/home-main-video.mp4" type="video/mp4" />
         </video>
+        <div class="video-controllers">
+          <button id="main-pause" class="active">
+            <img src="./assets/icons/pause.svg" alt="pause-icon" />
+          </button>
+          <button id="main-play">
+            <img src="./assets/icons/play.svg" alt="play-icon" />
+          </button>
+        </div>
       </main>
 
       <!-- Security -->
@@ -1652,6 +1660,76 @@
       </footer>
     </div>
     <!-- Скрипты -->
+    <script>
+      let currentGallery = 1;
+      const currentBox = document.getElementById("gallery-current");
+
+      // home page header cornder video custom control
+      const homeCornerPlayer = document.getElementById("home-corner-video");
+      const cornerPause = document.getElementById("corner-pause");
+      const cornerPlay = document.getElementById("corner-play");
+
+      homeCornerPlayer.addEventListener("ended", function () {
+        homeCornerPlayer.currentTime = 0;
+        homeCornerPlayer.play();
+      });
+
+      cornerPlay.addEventListener("click", () => {
+        homeCornerPlayer.play();
+        cornerPlay.classList.remove("active");
+        cornerPause.classList.add("active");
+      });
+      cornerPause.addEventListener("click", () => {
+        homeCornerPlayer.pause();
+        cornerPlay.classList.add("active");
+        cornerPause.classList.remove("active");
+      });
+      // =================
+
+      // home page main video custom control
+      const homeMainPlayer = document.getElementById("home-main-video");
+      const mainPause = document.getElementById("main-pause");
+      const mainPlay = document.getElementById("main-play");
+
+      homeMainPlayer.addEventListener("ended", function () {
+        homeMainPlayer.currentTime = 0;
+        homeMainPlayer.play();
+      });
+
+      mainPlay.addEventListener("click", () => {
+        homeMainPlayer.play();
+        mainPlay.classList.remove("active");
+        mainPause.classList.add("active");
+      });
+
+      mainPause.addEventListener("click", () => {
+        homeMainPlayer.pause();
+        mainPlay.classList.add("active");
+        mainPause.classList.remove("active");
+      });
+      // ========================
+
+      function onNext() {
+        currentGallery += 1;
+        if (currentGallery > 7) {
+          currentGallery = 1;
+        }
+        currentBox.innerText = currentGallery;
+      }
+
+      function onPrev() {
+        currentGallery -= 1;
+        if (currentGallery < 1) {
+          currentGallery = 7;
+        }
+        currentBox.innerText = currentGallery;
+      }
+
+      function onSwitch(index) {
+        currentGallery = index;
+        currentBox.innerText = index;
+      }
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

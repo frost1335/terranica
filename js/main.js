@@ -1,5 +1,3 @@
-let currentGallery = 1;
-const currentBox = document.getElementById("gallery-current");
 // Бургер Меню
 (function burger_menu() {
   let bmenu = document.querySelector(".burger-menu");
@@ -15,39 +13,29 @@ const currentBox = document.getElementById("gallery-current");
   };
 })();
 
-const homeCornerPlayer = document.getElementById("home-corner-video");
-const cornerPlay = document.getElementById("corner-play");
+// open and close map with contacts
+function onContactMap() {
+  const menu = document.querySelector(".hmenu__h-menu");
+  const contactMap = document.querySelector(".contact-left");
+  const openBtn = document.getElementById("open-map");
+  const closeBtn = document.getElementById("close-map");
 
-homeCornerPlayer.play();
-
-homeCornerPlayer.addEventListener("ended", function () {
-  homeCornerPlayer.currentTime = 0;
-  homeCornerPlayer.play();
-});
-
-cornerPlay.addEventListener("click", () => {
-  homeCornerPlayer.pause();
-});
-
-function onNext() {
-  currentGallery += 1;
-  if (currentGallery > 7) {
-    currentGallery = 1;
-  }
-  currentBox.innerText = currentGallery;
+  menu.classList.remove("open");
+  contactMap.classList.add("open");
+  openBtn.style.display = "none";
+  closeBtn.style.display = "inline-block";
 }
 
-function onPrev() {
-  currentGallery -= 1;
-  if (currentGallery < 1) {
-    currentGallery = 7;
-  }
-  currentBox.innerText = currentGallery;
-}
+function onCloseMap() {
+  const menu = document.querySelector(".hmenu__h-menu");
+  const contactMap = document.querySelector(".contact-left");
+  const openBtn = document.getElementById("open-map");
+  const closeBtn = document.getElementById("close-map");
 
-function onSwitch(index) {
-  currentGallery = index;
-  currentBox.innerText = index;
+  menu.classList.add("open");
+  contactMap.classList.remove("open");
+  openBtn.style.display = "inline-block";
+  closeBtn.style.display = "none";
 }
 
 // Раскрытие документов
@@ -86,27 +74,3 @@ function onSwitch(index) {
     }
   });
 })();
-
-function onContactMap() {
-  const menu = document.querySelector(".hmenu__h-menu");
-  const contactMap = document.querySelector(".contact-left");
-  const openBtn = document.getElementById("open-map");
-  const closeBtn = document.getElementById("close-map");
-
-  menu.classList.remove("open");
-  contactMap.classList.add("open");
-  openBtn.style.display = "none";
-  closeBtn.style.display = "inline-block";
-}
-
-function onCloseMap() {
-  const menu = document.querySelector(".hmenu__h-menu");
-  const contactMap = document.querySelector(".contact-left");
-  const openBtn = document.getElementById("open-map");
-  const closeBtn = document.getElementById("close-map");
-
-  menu.classList.add("open");
-  contactMap.classList.remove("open");
-  openBtn.style.display = "inline-block";
-  closeBtn.style.display = "none";
-}

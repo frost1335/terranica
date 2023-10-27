@@ -105,10 +105,39 @@
 .wrapper #article-main {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
-.wrapper #article-main #home-main-video {
+.wrapper #article-main #article-info-video {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  object-fit: cover;
+}
+.wrapper #article-main .video-controllers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper #article-main .video-controllers button {
+  width: 125px;
+  height: 125px;
+  outline: none;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  display: none;
+}
+.wrapper #article-main .video-controllers button.active {
+  display: block;
+}
+.wrapper #article-main .video-controllers button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(2);
 }
 .wrapper #news-part {
   padding-top: 87px;

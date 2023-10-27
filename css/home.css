@@ -27,21 +27,25 @@
   right: 15px;
 }
 .header #float__video .video-controllers button {
-  width: 40px;
-  height: 40px;
+  width: 41px;
+  height: 41px;
   outline: none;
   background: transparent;
   border: none;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -6px;
+  right: -12px;
   overflow: hidden;
+  display: none;
+}
+.header #float__video .video-controllers button.active {
+  display: block;
 }
 .header #float__video .video-controllers button img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transform: scale(2);
+  transform: scale(2.3);
 }
 
 #home-main {
@@ -51,10 +55,39 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0 0;
+  position: relative;
 }
 #home-main #home-main-video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+#home-main .video-controllers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home-main .video-controllers button {
+  width: 125px;
+  height: 125px;
+  outline: none;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  display: none;
+}
+#home-main .video-controllers button.active {
+  display: block;
+}
+#home-main .video-controllers button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(2);
 }
 
 #security {
@@ -353,6 +386,7 @@
   border: none;
   outline: none;
   opacity: 0.8;
+  background: transparent;
 }
 #gallery .head .gallery-nav .switch button.active {
   color: var(--Main-color, #007295);

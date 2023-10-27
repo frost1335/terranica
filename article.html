@@ -163,9 +163,7 @@
                   </a>
                 </li>
                 <li class="hmenu-ul__item">
-                  <a href="./news.html" class="hmenu-ul__link hmenu-ul--active"
-                    >новости
-                  </a>
+                  <a href="./news.html" class="hmenu-ul__link">новости </a>
                 </li>
               </ul>
             </div>
@@ -256,9 +254,22 @@
 
       <!-- Основной контент -->
       <section class="main" id="article-main">
-        <video muted="muted" data-interval="true" autoplay id="home-main-video">
+        <video
+          muted="muted"
+          data-interval="true"
+          autoplay
+          id="article-info-video"
+        >
           <source src="./img/home/home-main-video.mp4" type="video/mp4" />
         </video>
+        <div class="video-controllers">
+          <button id="article-pause" class="active">
+            <img src="./assets/icons/pause.svg" alt="pause-icon" />
+          </button>
+          <button id="article-play">
+            <img src="./assets/icons/play.svg" alt="play-icon" />
+          </button>
+        </div>
       </section>
 
       <section id="news-part">
@@ -413,6 +424,30 @@
       </footer>
     </div>
     <!-- Скрипты -->
+    <script>
+      // article page info video custom control
+      const articleInfoPlayer = document.getElementById("article-info-video");
+      const articlePause = document.getElementById("article-pause");
+      const articlePlay = document.getElementById("article-play");
+
+      articleInfoPlayer.addEventListener("ended", function () {
+        articleInfoPlayer.currentTime = 0;
+        articleInfoPlayer.play();
+      });
+
+      articlePlay.addEventListener("click", () => {
+        articleInfoPlayer.play();
+        articlePlay.classList.remove("active");
+        articlePause.classList.add("active");
+      });
+
+      articlePause.addEventListener("click", () => {
+        articleInfoPlayer.pause();
+        articlePlay.classList.add("active");
+        articlePause.classList.remove("active");
+      });
+      // ========================
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
