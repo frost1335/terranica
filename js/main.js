@@ -56,11 +56,6 @@ function onCloseMobContact() {
   headerMenuMobile.style.display = "block";
 }
 
-function onToggleMobMap() {
-  const openMobileMap = document.getElementById("open-mobile-map");
-  const closeMobileMap = document.getElementById("close-mobile-map");
-}
-
 // Раскрытие документов
 (function open_block() {
   let adt = document.querySelectorAll(".ad-block__top");

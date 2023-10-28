@@ -15,7 +15,12 @@
     <link rel="stylesheet" href="css/become-dealer/become-dealer.css" />
     <link rel="stylesheet" href="css/become-dealer/become-dealer-resp.css" />
     <link rel="stylesheet" href="css/responsive-style.css" />
-
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <title>Become a Dealer</title>
   </head>
   <body>
@@ -138,7 +143,7 @@
             <span class="h-line"></span>
             <div class="hmenu__h-menu d-flex justify-content-center">
               <ul class="hmenu-ul">
-                <li class="hmenu-ul__item">
+                <li class="hmenu-ul__item open">
                   <a href="#" onclick="onContactMap()" class="hmenu-ul__link">
                     Контакты
                   </a>
@@ -150,10 +155,7 @@
                   <a href="./dealers.html" class="hmenu-ul__link"> Дилеры </a>
                 </li>
                 <li class="hmenu-ul__item">
-                  <a
-                    href="./become-dealer.html"
-                    class="hmenu-ul__link hmenu-ul--active"
-                  >
+                  <a href="./become-dealer.html" class="hmenu-ul__link">
                     Стать дилером
                   </a>
                 </li>
@@ -178,6 +180,169 @@
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu-mobile">
+            <ul class="hmenu-ul">
+              <li class="hmenu-ul__item open">
+                <a href="#" onclick="onOpenMobContact()" class="hmenu-ul__link">
+                  Контакты
+                </a>
+              </li>
+              <li class="hmenu-ul__item">
+                <a href="./about.html" class="hmenu-ul__link"> О компании </a>
+              </li>
+              <li class="hmenu-ul__item">
+                <a href="./dealers.html" class="hmenu-ul__link"> Дилеры </a>
+              </li>
+              <li class="hmenu-ul__item">
+                <a
+                  href="./become-dealer.html"
+                  class="hmenu-ul__link hmenu-ul--active"
+                >
+                  Стать дилером
+                </a>
+              </li>
+              <li class="hmenu-ul__item">
+                <a href="./support.html" class="hmenu-ul__link"> Поддержка </a>
+              </li>
+              <li class="hmenu-ul__item">
+                <a href="./news.html" class="hmenu-ul__link"> новости </a>
+              </li>
+            </ul>
+            <div class="menu-contacts">
+              <h4><a href="#">+7 (980) 900 92 08</a></h4>
+              <h4><a href="#">mailterranica@yandex.ru</a></h4>
+              <p>
+                Напишите нам в чат, или мессенджеры, закажите обратный звонок.
+                Мы отвечаем быстро:
+              </p>
+              <div class="h-menu__h-slinks">
+                <ul class="h-slinks d-flex align-items-center">
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/1.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/2.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/3.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/4.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-menu-mobile">
+            <h2>Контакты</h2>
+            <div class="menu-contacts">
+              <h4><a href="#">+7 (980) 900 92 08</a></h4>
+              <h4><a href="#">mailterranica@yandex.ru</a></h4>
+              <p>
+                Напишите нам в чат, или мессенджеры, закажите обратный звонок.
+                Мы отвечаем быстро:
+              </p>
+              <div class="h-menu__h-slinks">
+                <ul class="h-slinks d-flex align-items-center">
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/1.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/2.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/3.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="h-slinks__item">
+                    <a href="#" class="h-slinks__link">
+                      <img src="img/hmenu/4.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="hmenu__twork">
+                <li class="twork__item d-flex flex-column">
+                  <span>Режим работы:</span>
+                  Мы работаем ежедневно с 10:00 до 20:00
+                </li>
+                <li class="twork__item d-flex flex-column">
+                  <span>Наш адрес:</span>
+                  Россия, г. Москва, ул. Академика Пилюгина д. 14, корп. 2.
+                </li>
+              </ul>
+              <div
+                class="hmenu__button bterr"
+                id="open-mobile-map"
+                onclick="onContactMap()"
+              >
+                Посмотреть на карте
+              </div>
+              <div
+                class="hmenu__button bterr"
+                id="close-mobile-map"
+                onclick="onCloseMap()"
+                style="display: none"
+              >
+                закрыть карту
+              </div>
+            </div>
+            <div class="mobile-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1106701.620387492!2d81.17010476058053!3d49.88936274387136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1698398267234!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div>
+              <div
+                class="hmenu__subus d-flex align-items-center justify-content-between"
+              >
+                <div class="subus-container d-flex gap-2">
+                  <p>Подписывайтесь на нас:</p>
+                  <ul class="subus__sul m-0 ms-2 d-flex gap-2">
+                    <li class="sul__item">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/youtube.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="sul__item m-0">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/facebook.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="sul__item m-0">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/vk.svg" alt="" />
+                      </a>
+                    </li>
+                    <li class="sul__item m-0">
+                      <a href="#" class="sul__link">
+                        <img src="img/hmenu/instagram.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
