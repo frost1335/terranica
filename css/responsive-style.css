@@ -12,7 +12,10 @@
     padding-right: 20px;
   }
   .hmenu__h-menu {
-    padding-left: 20px;
+    padding-left: 35px;
+  }
+  .hmenu-ul__link {
+    font-size: 38px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -25,6 +28,9 @@
   .header-menu-mobile {
     display: none;
     opacity: 0;
+  }
+  .hmenu-ul--active {
+    margin-left: -35px;
   }
   .content-mobile {
     display: none;

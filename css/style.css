@@ -507,6 +507,8 @@ body {
   text-decoration: none;
   transition: 0.3s;
   text-transform: uppercase;
+  word-break: keep-all;
+  display: flex;
 }
 
 .hmenu-ul__link:hover {

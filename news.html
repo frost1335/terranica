@@ -207,7 +207,9 @@
                 <a href="./support.html" class="hmenu-ul__link"> Поддержка </a>
               </li>
               <li class="hmenu-ul__item">
-                <a href="./news.html" class="hmenu-ul__link"> новости </a>
+                <a href="./news.html" class="hmenu-ul__link hmenu-ul--active">
+                  новости
+                </a>
               </li>
             </ul>
             <div class="menu-contacts">
@@ -352,31 +354,415 @@
         <div class="container">
           <div class="news-head">
             <h2>новости</h2>
-            <ul class="news-badges">
-              <li>
-                <a href="#" class="active">все Новости</a>
+            <ul class="nav nav-tabs news-badges" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                >
+                  все Новости
+                </button>
               </li>
               <li><span>/</span></li>
-              <li>
-                <a href="./article.html">технологии</a>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  технологии
+                </button>
               </li>
               <li><span>/</span></li>
-              <li>
-                <a href="#">выставки</a>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="messages-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#messages"
+                  type="button"
+                  role="tab"
+                  aria-controls="messages"
+                  aria-selected="false"
+                >
+                  выставки
+                </button>
               </li>
               <li><span>/</span></li>
-              <li>
-                <a href="#">видео</a>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="settings-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="settings"
+                  aria-selected="false"
+                >
+                  видео
+                </button>
               </li>
               <li><span>/</span></li>
-              <li>
-                <a href="#">новости</a>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="detail-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#detail"
+                  type="button"
+                  role="tab"
+                  aria-controls="detail"
+                  aria-selected="false"
+                >
+                  новости
+                </button>
               </li>
             </ul>
           </div>
-          <div class="content">
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div
+              class="tab-pane active show fade"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="content">
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="content">
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>премьера Грандиозная</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="messages"
+              role="tabpanel"
+              aria-labelledby="messages-tab"
+            >
+              <div class="content">
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>премьера Грандиозная</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+            >
+              <div class="content">
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>премьера Грандиозная</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="detail"
+              role="tabpanel"
+              aria-labelledby="detail-tab"
+            >
+              <div class="content">
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>Грандиозная премьера</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="card-img-pic">
+                    <img src="./img/news/card-img.jpg" alt="card-img" />
+                  </div>
+                  <div class="card-info">
+                    <h3>премьера Грандиозная</h3>
+                    <span>22 августа</span>
+                    <p>
+                      Приготовьтесь к серьезному обновлению в мире вездеходов!
+                      Мы гордо анонсируем выход нашего нового электровездехода,
+                      который объединяет...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content active" id="more-content" style="display: none">
             <div class="news-card">
-              <div class="card-img">
+              <div class="card-img-pic">
                 <img src="./img/news/card-img.jpg" alt="card-img" />
               </div>
               <div class="card-info">
@@ -390,7 +776,7 @@
               </div>
             </div>
             <div class="news-card">
-              <div class="card-img">
+              <div class="card-img-pic">
                 <img src="./img/news/card-img.jpg" alt="card-img" />
               </div>
               <div class="card-info">
@@ -404,7 +790,7 @@
               </div>
             </div>
             <div class="news-card">
-              <div class="card-img">
+              <div class="card-img-pic">
                 <img src="./img/news/card-img.jpg" alt="card-img" />
               </div>
               <div class="card-info">
@@ -418,11 +804,11 @@
               </div>
             </div>
             <div class="news-card">
-              <div class="card-img">
+              <div class="card-img-pic">
                 <img src="./img/news/card-img.jpg" alt="card-img" />
               </div>
               <div class="card-info">
-                <h3>Грандиозная премьера</h3>
+                <h3>премьера Грандиозная</h3>
                 <span>22 августа</span>
                 <p>
                   Приготовьтесь к серьезному обновлению в мире вездеходов! Мы
@@ -432,8 +818,9 @@
               </div>
             </div>
           </div>
+
           <div class="more-button">
-            <button>открыть еще</button>
+            <button id="more-button">открыть еще</button>
           </div>
         </div>
       </main>
@@ -553,6 +940,22 @@
     </div>
 
     <!-- Скрипты -->
+    <script>
+      const moreContent = document.getElementById("more-content");
+      const moreButton = document.getElementById("more-button");
+
+      moreButton.addEventListener("click", (e) => {
+        moreContent.classList.toggle("active");
+
+        if (moreContent.classList.contains("active")) {
+          moreContent.style.visibility = "none";
+          moreButton.innerText = "открыть еще";
+        } else {
+          moreContent.style.display = "grid";
+          moreButton.innerText = "скрыт";
+        }
+      });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
