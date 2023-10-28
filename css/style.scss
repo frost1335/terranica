@@ -766,7 +766,7 @@ body {
   font-size: 22px;
   font-weight: 500;
   color: #3c3c3c;
-  width: 700px;
+  max-width: 700px;
 }
 
 .about-top__blocks {
@@ -955,4 +955,3 @@ body {
 #d-check:checked ~ .d-check img {
   display: block;
 }
-
