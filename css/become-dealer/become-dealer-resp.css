@@ -1,7 +1,5 @@
-.dealer {
-  .more-button {
-    display: none;
-  }
+.dealer .more-button {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -10,82 +8,68 @@
     gap: 50px;
   }
 }
-
 @media screen and (max-width: 992px) {
   .wrapper main.main .dealer .dealer__d-blocks {
     gap: 20px;
     padding-top: 30px;
     grid-template-columns: 1.4fr 1fr;
   }
-
   .wrapper main.main .dealer .d-form {
     padding: 20px 15px;
   }
-
   .wrapper main.main .dealer .d-form__h4-title {
     font-size: 30px;
   }
-
   .wrapper main.main .dealer .d-form input:not(:first-child) {
     padding: 18px 12px;
   }
-
   .d-form textarea {
     padding: 18px 12px;
   }
-
   .wrapper main.main .dealer .d-blocks__d-block p {
     line-height: 22px;
   }
-
   .more-button {
     display: none;
   }
 }
-
 @media screen and (max-width: 768px) {
   .wrapper main.main .dealer .dealer__d-blocks {
     display: flex;
     flex-direction: column;
   }
-
   .wrapper main.main .dealer .d-blocks__d-block p {
     display: none;
-
-    &:first-child {
-      display: block;
-    }
   }
-
+  .wrapper main.main .dealer .d-blocks__d-block p:first-child {
+    display: block;
+  }
   .more-button {
     margin-bottom: 30px;
     text-align: center;
     display: block !important;
     margin-top: 30px;
-
-    button {
-      padding: 16px 45px;
-      border-radius: 7.883px;
-      border: 1px solid var(--Main-color, #007295);
-      color: var(--Main-color, #007295);
-      text-align: center;
-      font-family: "BlissPro", sans-serif;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 134.2%; /* 24.156px */
-      letter-spacing: 0.72px;
-      text-transform: uppercase;
-      background: transparent;
-      transition: 0.2s;
-
-      &:hover {
-        background: var(--Main-color, #007295);
-        color: var(--White, #fff);
-      }
-    }
+  }
+  .more-button button {
+    padding: 16px 45px;
+    border-radius: 7.883px;
+    border: 1px solid var(--Main-color, #007295);
+    color: var(--Main-color, #007295);
+    text-align: center;
+    font-family: "BlissPro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 134.2%; /* 24.156px */
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    background: transparent;
+    transition: 0.2s;
+  }
+  .more-button button:hover {
+    background: var(--Main-color, #007295);
+    color: var(--White, #fff);
   }
 }
 
-@media screen and (max-width: 576px) {
-}
+/*# sourceMappingURL=become-dealer-resp.css.map */

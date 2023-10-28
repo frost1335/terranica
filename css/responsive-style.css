@@ -27,7 +27,7 @@
   }
   .header-menu-mobile {
     display: none;
-    opacity: 0;
+    opacity: 0 !important;
   }
   .hmenu-ul--active {
     margin-left: -35px;
@@ -69,7 +69,7 @@
   }
   .header-menu-mobile,
   .contacts-menu-mobile {
-    opacity: 1;
+    opacity: 1 !important;
     display: flex;
     flex-direction: column;
     align-items: start;

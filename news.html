@@ -760,7 +760,7 @@
               </div>
             </div>
           </div>
-          <div class="content active" id="more-content" style="display: none">
+          <div class="content" id="more-content" style="display: none">
             <div class="news-card">
               <div class="card-img-pic">
                 <img src="./img/news/card-img.jpg" alt="card-img" />
@@ -847,22 +847,22 @@
                 <ul class="socials-l d-flex">
                   <li class="socials-l__item">
                     <a href="#" class="social-l__link">
-                      <img src="img/f-icons/1.svg" alt="" />
+                      <span class="mail"></span>
                     </a>
                   </li>
                   <li class="socials-l__item">
                     <a href="#" class="social-l__link">
-                      <img src="img/f-icons/2.svg" alt="" />
+                      <span class="telegram"></span>
                     </a>
                   </li>
                   <li class="socials-l__item">
                     <a href="#" class="social-l__link">
-                      <img src="img/f-icons/3.svg" alt="" />
+                      <span class="whatsapp"></span>
                     </a>
                   </li>
                   <li class="socials-l__item">
                     <a href="#" class="social-l__link">
-                      <img src="img/f-icons/4.svg" alt="" />
+                      <span class="phone"></span>
                     </a>
                   </li>
                 </ul>
@@ -887,7 +887,7 @@
                 </li>
               </ul>
             </div>
-            <div class="f-mid-block d-flex flex-column">
+            <div class="f-mid-block d-flex flex-column mt-auto mb-2">
               <div class="f-mid-icon align-self-end">
                 <img src="img/sk.png" alt="" />
               </div>
@@ -899,22 +899,22 @@
                   >
                     <li class="s-list__item">
                       <a href="#" class="s-list__link">
-                        <img src="img/youtube.svg" alt="" />
+                        <span class="youtube"></span>
                       </a>
                     </li>
                     <li class="s-list__item">
                       <a href="#" class="s-list__link">
-                        <img src="img/facebook.svg" alt="" />
+                        <span class="facebook"></span>
                       </a>
                     </li>
                     <li class="s-list__item">
                       <a href="#" class="s-list__link">
-                        <img src="img/vk.svg" alt="" />
+                        <span class="vk"></span>
                       </a>
                     </li>
                     <li class="s-list__item">
                       <a href="#" class="s-list__link">
-                        <img src="img/instagram.svg" alt="" />
+                        <span class="instagram"></span>
                       </a>
                     </li>
                   </ul>
@@ -943,10 +943,9 @@
     <script>
       const moreContent = document.getElementById("more-content");
       const moreButton = document.getElementById("more-button");
+      let current = "";
 
       moreButton.addEventListener("click", (e) => {
-        moreContent.classList.toggle("active");
-
         if (moreContent.classList.contains("active")) {
           moreContent.style.visibility = "none";
           moreButton.innerText = "открыть еще";

@@ -22,6 +22,8 @@
   align-items: center;
   gap: 11px;
   list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 .wrapper main#article-info .article-head ul.news-badges li span {
   color: rgba(60, 60, 60, 0.18);

@@ -50,7 +50,7 @@ const renderer = new THREE.WebGLRenderer({ alpha: true });
 
 // size of render scene
 camera.aspect = window.innerWidth / window.innerHeight;
-renderer.setSize(container.clientWidth, container.clientHeight);
+renderer.setSize(container.clientWidth - 10, container.clientHeight);
 
 container.appendChild(renderer.domElement);
 

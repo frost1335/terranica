@@ -6,59 +6,47 @@
   .support__text {
     margin-left: 20px;
   }
-
   .support__main {
     display: grid !important;
     grid-template-columns: 1fr 1.5fr;
   }
-
   .wrapper main.main .support .support__p {
     padding-right: 0;
   }
 }
-
 @media screen and (max-width: 992px) {
   .mob-support-img {
     display: inline !important;
     width: 100%;
-
-    img {
-      width: 100%;
-      filter: sepia(100%) hue-rotate(166deg) saturate(116%) contrast(143%);
-      -webkit-filter: sepia(100%) hue-rotate(166deg) saturate(116%)
-        contrast(143%);
-      -moz-filter: sepia(100%) hue-rotate(166deg) saturate(116%) contrast(143%);
-    }
   }
-
+  .mob-support-img img {
+    width: 100%;
+    filter: sepia(100%) hue-rotate(166deg) saturate(116%) contrast(143%);
+    -webkit-filter: sepia(100%) hue-rotate(166deg) saturate(116%) contrast(143%);
+    -moz-filter: sepia(100%) hue-rotate(166deg) saturate(116%) contrast(143%);
+  }
   .support__main {
     display: flex !important;
     flex-direction: column;
   }
-
   .support__img {
     width: 100%;
     margin-bottom: 20px;
-
-    img {
-      width: 100%;
-
-      &:nth-child(2) {
-        display: none;
-      }
-    }
   }
-
+  .support__img img {
+    width: 100%;
+  }
+  .support__img img:nth-child(2) {
+    display: none;
+  }
   .support__text {
     margin-left: 0;
     margin-bottom: 25px;
   }
-
   .wrapper main.main .support .support__p {
     padding: 0;
   }
 }
-
 @media screen and (max-width: 768px) {
   .wrapper main.main .support .support__h3-title {
     font-size: 26px;
@@ -70,5 +58,4 @@
   }
 }
 
-@media screen and (max-width: 576px) {
-}
+/*# sourceMappingURL=support-resp.css.map */
