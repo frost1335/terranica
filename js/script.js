@@ -109,22 +109,12 @@ const colors = [
 
 const colorBtns = document.querySelectorAll(".model-color");
 
-const excludeObj = [
-  // "Object_5",
-  // "Object_6",
-  "Object_7",
-  // "Object_8",
-  // "Object_9",
-  "Object_10",
-  // "Object_11",
-  // "Object_12",
-  // "Object_13",
-];
+const includeObjects = ["Object_7", "Object_10"];
 
 colorBtns.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     object.traverse((child) => {
-      if (child.isMesh && excludeObj.includes(child.name)) {
+      if (child.isMesh && includeObjects.includes(child.name)) {
         child.material.color.set(colors[index]);
       }
     });

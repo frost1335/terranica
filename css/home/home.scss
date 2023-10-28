@@ -125,6 +125,7 @@
     margin-bottom: 100px;
     position: relative;
     z-index: 10;
+    border-bottom: none;
 
     .category-box {
       width: 64px;
@@ -132,6 +133,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      button {
+        padding: 0;
+        border-bottom: none;
+      }
     }
 
     button {
@@ -157,6 +163,10 @@
     }
   }
 
+  .tab-pane {
+    height: 100%;
+  }
+
   .content {
     display: grid;
     height: 90%;
@@ -177,6 +187,21 @@
     }
 
     &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #4c9cb5;
+    }
+
+    .scrollbar {
+      border-radius: 2px;
+      background-color: #e4e8e8;
+    }
+
+    .scrollbar-thumb {
+      width: 4px;
+      background-color: transparent;
+    }
+
+    .scrollbar-track {
       border-radius: 10px;
       background-color: #4c9cb5;
     }
@@ -541,6 +566,21 @@
     }
 
     &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #4c9cb5;
+    }
+
+    .scrollbar {
+      border-radius: 2px;
+      background-color: #e4e8e8;
+    }
+
+    .scrollbar-thumb {
+      width: 4px;
+      background-color: transparent;
+    }
+
+    .scrollbar-track {
       border-radius: 10px;
       background-color: #4c9cb5;
     }

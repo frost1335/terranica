@@ -109,6 +109,7 @@
   margin-bottom: 100px;
   position: relative;
   z-index: 10;
+  border-bottom: none;
 }
 #security .categories .category-box {
   width: 64px;
@@ -116,6 +117,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#security .categories .category-box button {
+  padding: 0;
+  border-bottom: none;
 }
 #security .categories button {
   width: 48px;
@@ -136,6 +141,9 @@
   height: 100%;
   object-fit: contain;
 }
+#security .tab-pane {
+  height: 100%;
+}
 #security .content {
   display: grid;
   height: 90%;
@@ -155,6 +163,18 @@
   background-color: transparent;
 }
 #security .content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4c9cb5;
+}
+#security .content .scrollbar {
+  border-radius: 2px;
+  background-color: #e4e8e8;
+}
+#security .content .scrollbar-thumb {
+  width: 4px;
+  background-color: transparent;
+}
+#security .content .scrollbar-track {
   border-radius: 10px;
   background-color: #4c9cb5;
 }
@@ -471,6 +491,18 @@
   background-color: transparent;
 }
 #gallery .gallery-photos::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4c9cb5;
+}
+#gallery .gallery-photos .scrollbar {
+  border-radius: 2px;
+  background-color: #e4e8e8;
+}
+#gallery .gallery-photos .scrollbar-thumb {
+  width: 4px;
+  background-color: transparent;
+}
+#gallery .gallery-photos .scrollbar-track {
   border-radius: 10px;
   background-color: #4c9cb5;
 }
