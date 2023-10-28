@@ -647,16 +647,17 @@
     <script>
       const moreContent = document.getElementById("more-content");
       const moreButton = document.getElementById("more-button");
+      let current = "";
 
       moreButton.addEventListener("click", (e) => {
-        moreContent.classList.toggle("active");
-
-        if (moreContent.classList.contains("active")) {
-          moreContent.style.visibility = "none";
+        if (current === "active") {
+          moreContent.style.display = "none";
           moreButton.innerText = "открыть еще";
+          current = "";
         } else {
           moreContent.style.display = "grid";
           moreButton.innerText = "скрыт";
+          current = "active";
         }
       });
     </script>

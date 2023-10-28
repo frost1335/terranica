@@ -28,11 +28,39 @@
     width: 100%;
     max-width: 100%;
     height: unset;
+
+    border-radius: 12px;
+
+    img {
+      border-radius: 12px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
+  .wrapper main#article-info .article-head {
+    overflow-x: auto;
+  }
+  .wrapper main#article-info .article-head ul.news-badges {
+    width: 100%;
+  }
+
+  .wrapper #news-part .content .news-card .card-info h3 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 106.8%; /* 29.904px */
+    text-transform: uppercase;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .wrapper main#article-info .article-content h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 168%;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+  }
 }

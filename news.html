@@ -354,82 +354,84 @@
         <div class="container">
           <div class="news-head">
             <h2>новости</h2>
-            <ul class="nav nav-tabs news-badges" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#home"
-                  type="button"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                >
-                  все Новости
-                </button>
-              </li>
-              <li><span>/</span></li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                >
-                  технологии
-                </button>
-              </li>
-              <li><span>/</span></li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="messages-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#messages"
-                  type="button"
-                  role="tab"
-                  aria-controls="messages"
-                  aria-selected="false"
-                >
-                  выставки
-                </button>
-              </li>
-              <li><span>/</span></li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="settings-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="settings"
-                  aria-selected="false"
-                >
-                  видео
-                </button>
-              </li>
-              <li><span>/</span></li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="detail-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#detail"
-                  type="button"
-                  role="tab"
-                  aria-controls="detail"
-                  aria-selected="false"
-                >
-                  новости
-                </button>
-              </li>
-            </ul>
+            <div class="badges">
+              <ul class="nav nav-tabs news-badges" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    все Новости
+                  </button>
+                </li>
+                <li><span>/</span></li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    технологии
+                  </button>
+                </li>
+                <li><span>/</span></li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="messages-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#messages"
+                    type="button"
+                    role="tab"
+                    aria-controls="messages"
+                    aria-selected="false"
+                  >
+                    выставки
+                  </button>
+                </li>
+                <li><span>/</span></li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="settings-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#settings"
+                    type="button"
+                    role="tab"
+                    aria-controls="settings"
+                    aria-selected="false"
+                  >
+                    видео
+                  </button>
+                </li>
+                <li><span>/</span></li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="detail-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#detail"
+                    type="button"
+                    role="tab"
+                    aria-controls="detail"
+                    aria-selected="false"
+                  >
+                    новости
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <!-- Tab panes -->
@@ -946,12 +948,14 @@
       let current = "";
 
       moreButton.addEventListener("click", (e) => {
-        if (moreContent.classList.contains("active")) {
-          moreContent.style.visibility = "none";
+        if (current === "active") {
+          moreContent.style.display = "none";
           moreButton.innerText = "открыть еще";
+          current = "";
         } else {
           moreContent.style.display = "grid";
           moreButton.innerText = "скрыт";
+          current = "active";
         }
       });
     </script>
