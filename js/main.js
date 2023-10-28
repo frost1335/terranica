@@ -10,6 +10,7 @@
     hmenu.classList.toggle("header__menu--active");
     logo.classList.toggle("logo--active");
     body.classList.toggle("noscroll");
+    onCloseMobContact();
   };
 })();
 
@@ -36,6 +37,28 @@ function onCloseMap() {
   contactMap.classList.remove("open");
   openBtn.style.display = "inline-block";
   closeBtn.style.display = "none";
+}
+
+// mobile map and contact toggle
+function onOpenMobContact() {
+  const contactsMenuMobile = document.querySelector(".contacts-menu-mobile");
+  const headerMenuMobile = document.querySelector(".header-menu-mobile");
+
+  contactsMenuMobile.style.display = "block";
+  headerMenuMobile.style.display = "none";
+}
+
+function onCloseMobContact() {
+  const contactsMenuMobile = document.querySelector(".contacts-menu-mobile");
+  const headerMenuMobile = document.querySelector(".header-menu-mobile");
+
+  contactsMenuMobile.style.display = "none";
+  headerMenuMobile.style.display = "block";
+}
+
+function onToggleMobMap() {
+  const openMobileMap = document.getElementById("open-mobile-map");
+  const closeMobileMap = document.getElementById("close-mobile-map");
 }
 
 // Раскрытие документов

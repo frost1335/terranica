@@ -19,14 +19,13 @@ let object;
 
 let controls;
 
-let objToRender = "car";
-
 const loader = new GLTFLoader();
 
 loader.load(
   `../models/car/scene.gltf`,
   function (gltf) {
     object = gltf.scene;
+    console.log(object);
     scene.add(object);
   },
   function (xhr) {
@@ -45,7 +44,7 @@ renderer.setSize(container.clientWidth, container.clientHeight);
 
 container.appendChild(renderer.domElement);
 
-camera.position.z = 2.5
+camera.position.z = 3;
 camera.position.y = 2;
 camera.position.x = 3;
 
@@ -75,7 +74,6 @@ scene.add(ambientLight);
 
 controls = new OrbitControls(camera, renderer.domElement);
 controls.enableZoom = false; // Disable zoom.
-camera.lookAt(0, 0, 0);
 
 function animate() {
   requestAnimationFrame(animate);

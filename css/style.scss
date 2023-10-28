@@ -144,12 +144,6 @@ body {
 }
 
 /* Базовые настройки */
-
-.container {
-  width: 90%;
-  margin: auto;
-}
-
 .burger-menu {
   display: flex;
   flex-direction: column;
@@ -959,4 +953,8 @@ body {
 
 #d-check:checked ~ .d-check img {
   display: block;
+}
+
+.header-menu-mobile {
+  display: none;
 }
