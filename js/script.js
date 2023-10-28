@@ -123,12 +123,10 @@ const excludeObj = [
 
 colorBtns.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
-    if (loaded) {
-      object.traverse((child) => {
-        if (child.isMesh && excludeObj.includes(child.name)) {
-          child.material.color.set(colors[index]);
-        }
-      });
-    }
+    object.traverse((child) => {
+      if (child.isMesh && excludeObj.includes(child.name)) {
+        child.material.color.set(colors[index]);
+      }
+    });
   });
 });
