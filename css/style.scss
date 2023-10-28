@@ -354,6 +354,7 @@ body {
   margin-top: 150px;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  overflow-y: hidden;
 }
 
 .hmenu__h3-title {
@@ -955,10 +956,3 @@ body {
   display: block;
 }
 
-.header-menu-mobile {
-  display: none;
-}
-
-.content-mobile {
-  display: none;
-}

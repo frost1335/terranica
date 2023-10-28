@@ -710,7 +710,7 @@
                   <button>интерьер</button>
                 </div>
               </div>
-              <div class="slider-control d-none d-md-block">
+              <div class="slider-control d-none d-md-flex">
                 <button
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="prev"
@@ -842,7 +842,98 @@
             </button>
           </div>
         </div>
-        <div class="gallery-photos">
+        <div class="mobile-controls d-flex d-sm-none">
+          <div class="dots">
+            <span
+              class="active"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"
+              onclick="onSwitch(1)"
+            ></span>
+            <span
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              onclick="onSwitch(2)"
+            ></span>
+            <span
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              onclick="onSwitch(3)"
+            ></span>
+            <span
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+              onclick="onSwitch(4)"
+            ></span>
+            <span
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+              onclick="onSwitch(5)"
+            ></span>
+            <span
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+              onclick="onSwitch(6)"
+            ></span>
+            <span
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+              onclick="onSwitch(7)"
+            ></span>
+          </div>
+          <div class="slider-control d-flex d-md-none">
+            <button
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+              onclick="onPrev()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="25"
+                viewBox="0 0 21 25"
+                fill="none"
+              >
+                <path
+                  d="M0.303112 11.6594C-0.101025 11.8869 -0.101023 12.4558 0.303114 12.6834L20.4215 24.0114C21.1402 24.4161 21.1184 23.1218 20.714 22.403L19.306 19.9002C16.6063 15.1013 16.6063 9.24145 19.306 4.44251L20.714 1.93971C21.1184 1.22091 21.1402 -0.0733393 20.4215 0.33131L0.303112 11.6594Z"
+                  fill="#007295"
+                />
+              </svg>
+            </button>
+            <div class="show">
+              <h4 class="m-0" id="gallery-current-mob">1</h4>
+              <span>/</span>
+              <h5 class="m-0">7</h5>
+            </div>
+            <button
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+              onclick="onNext()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="25"
+                viewBox="0 0 22 25"
+                fill="none"
+              >
+                <path
+                  d="M21.3585 11.6594C21.7626 11.8869 21.7626 12.4558 21.3585 12.6834L1.24012 24.0114C0.521466 24.4161 0.543234 23.1218 0.947612 22.403L2.35562 19.9002C5.05536 15.1013 5.05536 9.24145 2.35562 4.44251L0.947612 1.93971C0.543235 1.22091 0.521469 -0.0733393 1.24012 0.33131L21.3585 11.6594Z"
+                  fill="#007295"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-photos d-none d-sm-flex">
           <div
             class="gallery-item active"
             data-bs-target="#carouselExampleIndicators"
@@ -1842,6 +1933,7 @@
     <script>
       let currentGallery = 1;
       const currentBox = document.getElementById("gallery-current");
+      const currentBoxMob = document.getElementById("gallery-current-mob");
 
       // home page header cornder video custom control
       const homeCornerPlayer = document.getElementById("home-corner-video");
@@ -1894,6 +1986,7 @@
           currentGallery = 1;
         }
         currentBox.innerText = currentGallery;
+        currentBoxMob.innerText = currentGallery;
       }
 
       function onPrev() {
@@ -1902,11 +1995,13 @@
           currentGallery = 7;
         }
         currentBox.innerText = currentGallery;
+        currentBoxMob.innerText = currentGallery;
       }
 
       function onSwitch(index) {
         currentGallery = index;
         currentBox.innerText = index;
+        currentBoxMob.innerText = index;
       }
     </script>
     <script src="js/main.js"></script>

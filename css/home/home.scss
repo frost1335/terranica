@@ -349,11 +349,16 @@
     }
 
     .bg-text {
+      width: 100%;
       position: absolute;
       z-index: 1;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+
+      svg {
+        width: 100%;
+      }
     }
 
     .bg-img {
@@ -953,3 +958,7 @@
 }
 
 /* home style */
+
+.content-mobile {
+  display: none;
+}

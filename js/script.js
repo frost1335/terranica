@@ -26,6 +26,16 @@ loader.load(
   function (gltf) {
     object = gltf.scene;
     console.log(object);
+
+    const mesh = object.children[0];
+
+    console.log(mesh);
+
+    object.traverse((child) => {
+      if (child.isMesh) {
+        child.material.color.set(0x2194ce); // Red color
+      }
+    });
     scene.add(object);
   },
   function (xhr) {

@@ -306,11 +306,15 @@
   z-index: 15;
 }
 #three_model .three-model .bg-text {
+  width: 100%;
   position: absolute;
   z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+#three_model .three-model .bg-text svg {
+  width: 100%;
 }
 #three_model .three-model .bg-img {
   width: 100%;
@@ -828,5 +832,8 @@
 }
 
 /* home style */
+.content-mobile {
+  display: none;
+}
 
 /*# sourceMappingURL=home.css.map */
