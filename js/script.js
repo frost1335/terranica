@@ -63,10 +63,6 @@ let light = new THREE.PointLight(0xc4c4c4, 10);
 light.position.set(0, 300, 500);
 scene.add(light);
 
-let light2 = new THREE.PointLight(0xc4c4c4, 10);
-light2.position.set(500, 100, 0);
-scene.add(light2);
-
 let light3 = new THREE.PointLight(0xc4c4c4, 10);
 light3.position.set(0, 100, -500);
 scene.add(light3);
@@ -113,11 +109,23 @@ const colors = [
 
 const colorBtns = document.querySelectorAll(".model-color");
 
+const excludeObj = [
+  // "Object_5",
+  // "Object_6",
+  "Object_7",
+  // "Object_8",
+  // "Object_9",
+  "Object_10",
+  // "Object_11",
+  // "Object_12",
+  // "Object_13",
+];
+
 colorBtns.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     if (loaded) {
       object.traverse((child) => {
-        if (child.isMesh) {
+        if (child.isMesh && excludeObj.includes(child.name)) {
           child.material.color.set(colors[index]);
         }
       });
