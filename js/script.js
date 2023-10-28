@@ -19,6 +19,8 @@ let object;
 
 let controls;
 
+let loaded = false;
+
 const loader = new GLTFLoader();
 
 loader.load(
@@ -27,19 +29,13 @@ loader.load(
     object = gltf.scene;
     console.log(object);
 
-    const mesh = object.children[0];
-
-    console.log(mesh);
-
-    object.traverse((child) => {
-      if (child.isMesh) {
-        child.material.color.set(0x2194ce); // Red color
-      }
-    });
     scene.add(object);
   },
   function (xhr) {
     console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+    if ((xhr.loaded / xhr.total) * 100 === 100) {
+      loaded = true;
+    }
   },
   function (error) {
     console.error(error);
@@ -100,3 +96,31 @@ window.addEventListener("resize", (e) => {
 controls.addEventListener("change", renderer);
 
 animate();
+
+// change colors
+
+const colors = [
+  "#b9211b",
+  "#e0541c",
+  "#ffcc40",
+  "#108253",
+  "#0b5c8a",
+  "#fff",
+  "#42ac51",
+  "#242323",
+  "#b27d2d",
+];
+
+const colorBtns = document.querySelectorAll(".model-color");
+
+colorBtns.forEach((btn, index) => {
+  btn.addEventListener("click", (e) => {
+    if (loaded) {
+      object.traverse((child) => {
+        if (child.isMesh) {
+          child.material.color.set(colors[index]);
+        }
+      });
+    }
+  });
+});

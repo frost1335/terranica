@@ -53,6 +53,9 @@
     width: 100vw;
     position: relative;
   }
+  .f-mid-title {
+    text-align: left;
+  }
   .header__main {
     position: unset;
     padding: 0 !important;
@@ -256,8 +259,8 @@
     margin-bottom: 5px;
   }
   #three_model .three-model {
-    width: 100vw;
-    height: 500px;
+    width: 80vw;
+    height: 560px;
   }
   #three_model .three-model .threejs-model {
     height: 100%;
