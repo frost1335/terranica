@@ -153,6 +153,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 10;
+  scrollbar-color: #4c9cb5;
 }
 #security .content::-webkit-scrollbar-track {
   border-radius: 2px;

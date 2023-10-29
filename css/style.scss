@@ -958,3 +958,48 @@ body {
 #d-check:checked ~ .d-check img {
   display: block;
 }
+
+.loader-box {
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader {
+    position: relative;
+
+    .ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 127px;
+      height: 127px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .star {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 107px;
+      height: 107px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

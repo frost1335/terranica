@@ -928,4 +928,44 @@ body {
   display: block;
 }
 
+.loader-box {
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-box .loader {
+  position: relative;
+}
+.loader-box .loader .ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 127px;
+  height: 127px;
+}
+.loader-box .loader .ring img {
+  width: 100%;
+  height: 100%;
+}
+.loader-box .loader .star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 107px;
+  height: 107px;
+}
+.loader-box .loader .star img {
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

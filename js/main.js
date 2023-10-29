@@ -1,4 +1,55 @@
 // Бургер Меню
+
+function loaderStart() {
+  gsap.registerPlugin(ScrollTrigger);
+  const ring = document.querySelector(".ring");
+  const star = document.querySelector(".star");
+  const loader = document.querySelector(".loader");
+
+  const timeline = gsap.timeline();
+  const timeline2 = gsap.timeline();
+
+  timeline.to(ring, {
+    rotation: 45,
+    duration: 1.5,
+  });
+  timeline.to(ring, {
+    rotation: -45,
+    duration: 1.5,
+  });
+  timeline.to(ring, {
+    rotation: 45,
+    duration: 1.5,
+  });
+
+  timeline.to(".loader-box", {
+    yPercent: -100,
+    opacity: 0,
+    duration: 1,
+  });
+
+  timeline2.to(star, {
+    rotation: 360,
+    duration: 1.5,
+  });
+  timeline2.to(star, {
+    rotation: 720,
+    duration: 1.5,
+  });
+
+  timeline2.to(star, {
+    rotation: 1080,
+    duration: 1.5,
+  });
+
+  gsap.from(loader, {
+    opacity: 0,
+    duration: 2,
+  });
+}
+
+loaderStart();
+
 (function burger_menu() {
   let bmenu = document.querySelector(".burger-menu");
   let hmenu = document.querySelector(".header__menu");
