@@ -32,3 +32,9 @@ gsap.from(".header__mid", {
   duration: 1.3,
   delay: 4.5,
 });
+
+gsap.from("#float__video", {
+  opacity: 0,
+  delay: 6,
+  duration: 1,
+});

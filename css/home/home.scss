@@ -176,22 +176,29 @@
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 10;
+    scrollbar-color: #4c9cb5 #e4e8e8;
+    scrollbar-width: 4px;
+
     &::-webkit-scrollbar-track {
       border-radius: 2px;
       background-color: #e4e8e8;
+      scrollbar-width: thin;
+      scrollbar-width: 4px;
     }
 
     &::-webkit-scrollbar {
+      scrollbar-width: thin;
+      scrollbar-width: 4px;
       width: 4px;
       background-color: transparent;
     }
 
     &::-webkit-scrollbar-thumb {
+      scrollbar-width: thin;
+      scrollbar-width: 4px;
       border-radius: 10px;
       background-color: #4c9cb5;
     }
-
-    scrollbar-color: #4c9cb5;
 
     .scrollbar {
       border-radius: 2px;
