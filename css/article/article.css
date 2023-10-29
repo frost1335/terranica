@@ -24,6 +24,7 @@
   list-style: none;
   padding-left: 0;
   margin-left: 0;
+  flex-wrap: nowrap;
 }
 .wrapper main#article-info .article-head ul.news-badges li span {
   color: rgba(60, 60, 60, 0.18);
@@ -36,7 +37,7 @@
   letter-spacing: 0.72px;
   text-transform: uppercase;
 }
-.wrapper main#article-info .article-head ul.news-badges li a {
+.wrapper main#article-info .article-head ul.news-badges li button {
   color: #9a9c9c;
   text-align: center;
   font-family: "BlissPro";
@@ -46,8 +47,10 @@
   line-height: 124.8%;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
+  background: none;
 }
-.wrapper main#article-info .article-head ul.news-badges li a.active {
+.wrapper main#article-info .article-head ul.news-badges li button.active {
   color: #007295;
 }
 .wrapper main#article-info .article-content {

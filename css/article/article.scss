@@ -32,6 +32,7 @@
         list-style: none;
         padding-left: 0;
         margin-left: 0;
+        flex-wrap: nowrap;
 
         li {
           span {
@@ -47,7 +48,7 @@
             text-transform: uppercase;
           }
 
-          a {
+          button {
             color: #9a9c9c;
             text-align: center;
             font-family: "BlissPro";
@@ -57,6 +58,8 @@
             line-height: 124.8%;
             text-transform: uppercase;
             text-decoration: none;
+            border: none;
+            background: none;
 
             &.active {
               color: #007295;
