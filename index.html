@@ -1243,11 +1243,37 @@
                 class="gallery-nav d-flex flex-md-row flex-column align-bottom mb-3 mb-md-0 gap-5"
               >
                 <h3>галерея</h3>
-                <div class="switch">
-                  <button class="active">экстерьер</button>
+                <ul class="nav nav-tabs switch" id="myTabSwitch" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab-gallery"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-pan"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-pan"
+                      aria-selected="true"
+                    >
+                      экстерьер
+                    </button>
+                  </li>
                   <span>/</span>
-                  <button>интерьер</button>
-                </div>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab-gallery"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-pan"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-pan"
+                      aria-selected="false"
+                    >
+                      интерьер
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="slider-control d-none d-md-flex">
                 <button
@@ -1295,90 +1321,192 @@
             </div>
           </div>
         </div>
-        <div class="gallery-content">
+        <div class="tab-content">
           <div
-            id="carouselExampleIndicators"
-            data-bs-interval="false"
-            class="carousel slide"
-            data-bs-ride="carousel"
+            class="tab-pane active fade show"
+            id="home-pan"
+            role="tabpanel"
+            aria-labelledby="home-tab-gallery"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-1.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
-              </div>
-              <div class="carousel-item gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-2.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
-              </div>
-              <div class="carousel-item gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-3.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
-              </div>
-              <div class="carousel-item gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-4.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
-              </div>
-              <div class="carousel-item gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-5.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
-              </div>
-              <div class="carousel-item gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-6.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
-              </div>
-              <div class="carousel-item gallery-picture">
-                <img
-                  src="./img/home/home-slider/source/slide-7.jpg"
-                  class="d-block w-100"
-                  alt="gallery-img"
-                />
+            <div class="gallery-content">
+              <div
+                id="carouselExampleIndicators"
+                data-bs-interval="false"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-1.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-2.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-3.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-4.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-5.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-6.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-7.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                  onclick="onPrev()"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                  onclick="onNext()"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-              onclick="onPrev()"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-              onclick="onNext()"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile-pan"
+            role="tabpanel"
+            aria-labelledby="profile-tab-gallery"
+          >
+            <div class="gallery-content">
+              <div
+                id="carouselExampleIndicators"
+                data-bs-interval="false"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-1.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-2.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-3.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-4.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-5.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-6.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                  <div class="carousel-item gallery-picture">
+                    <img
+                      src="./img/home/home-slider/source/slide-7.jpg"
+                      class="d-block w-100"
+                      alt="gallery-img"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                  onclick="onPrev()"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                  onclick="onNext()"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="mobile-controls d-flex d-sm-none">

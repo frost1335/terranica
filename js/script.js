@@ -27,7 +27,6 @@ loader.load(
   `../models/car/scene.gltf`,
   function (gltf) {
     object = gltf.scene;
-    console.log(object);
 
     scene.add(object);
   },
