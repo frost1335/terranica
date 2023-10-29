@@ -1,7 +1,7 @@
 // Бургер Меню
+gsap.registerPlugin(ScrollTrigger);
 
 function loaderStart() {
-  gsap.registerPlugin(ScrollTrigger);
   const ring = document.querySelector(".ring");
   const star = document.querySelector(".star");
   const loader = document.querySelector(".loader");
@@ -12,6 +12,9 @@ function loaderStart() {
   timeline.to(ring, {
     rotation: 45,
     duration: 1.5,
+    onStart: () => {
+      document.body.style.overflow = "hidden";
+    },
   });
   timeline.to(ring, {
     rotation: -45,
@@ -26,6 +29,9 @@ function loaderStart() {
     yPercent: -100,
     opacity: 0,
     duration: 1,
+    onComplete() {
+      document.body.style.overflow = "auto";
+    },
   });
 
   timeline2.to(star, {
@@ -50,19 +56,48 @@ function loaderStart() {
 
 loaderStart();
 
+const menuBtn = document.querySelector(".burger-menu");
+
+function menuAnimation(e) {
+  if (!e.target.classList.contains("burger-menu--active")) {
+    const menuLinks = document.querySelectorAll(".hmenu-ul__item");
+    const menuItems = document.querySelectorAll(".menu-item");
+
+    menuLinks.forEach((elem, index) => {
+      gsap.from(elem, {
+        x: 60,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2 * index,
+      });
+    });
+
+    menuItems.forEach((elem, index) => {
+      gsap.from(elem, {
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2 * index,
+      });
+    });
+  }
+}
+
+menuBtn.addEventListener("click", menuAnimation);
+
 (function burger_menu() {
   let bmenu = document.querySelector(".burger-menu");
   let hmenu = document.querySelector(".header__menu");
   let logo = document.querySelector(".logo");
   let body = document.querySelector("body");
 
-  bmenu.onclick = function () {
+  bmenu.addEventListener("click", function () {
     this.classList.toggle("burger-menu--active");
     hmenu.classList.toggle("header__menu--active");
     logo.classList.toggle("logo--active");
     body.classList.toggle("noscroll");
     onCloseMobContact();
-  };
+  });
 })();
 
 // open and close map with contacts
@@ -112,10 +147,10 @@ function onCloseMobContact() {
   let adt = document.querySelectorAll(".ad-block__top");
   let add = document.querySelectorAll(".ad-block__down");
   for (let i = 0; i < adt.length; i++) {
-    adt[i].onclick = function () {
+    adt[i].addEventListener("click", function () {
       this.querySelector(".ad-arrow").classList.toggle("ad-arrow--active");
       add[i].classList.toggle("ad-block__down--active");
-    };
+    });
   }
 })();
 
@@ -127,15 +162,15 @@ function onCloseMobContact() {
   let oimg = document.querySelector(".overlay-container > img");
 
   for (let i = 0; i < ad_block_down.length; i++) {
-    ad_block_down[i].onclick = function (event) {
+    ad_block_down[i].addEventListener("click", function (event) {
       overlay.classList.add("overlay--active");
       oimg.src = event.target.src;
-    };
+    });
   }
 
-  overlay_close.onclick = function () {
+  overlay_close?.addEventListener("click", function () {
     overlay.classList.remove("overlay--active");
-  };
+  });
   window.addEventListener("click", (e) => {
     const target = e.target;
     if (target.closest(".overlay") && !target.closest(".overlay-container")) {

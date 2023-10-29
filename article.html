@@ -24,6 +24,18 @@
     <title>Article</title>
   </head>
   <body>
+    <div class="loader-box">
+      <div class="loader">
+        <div class="ring">
+          <img src="./assets/loader/ring.svg" alt="ring" />
+        </div>
+        <div class="star">
+          <img src="./assets/loader/star.svg" alt="star" />
+        </div>
+      </div>
+    </div>
+
+
     <div class="wrapper">
       <!-- Шапка -->
       <header class="header">
@@ -47,12 +59,12 @@
         <div class="header__menu p-3">
           <div class="hmenu container">
             <div class="hmenu__h-contacts">
-              <h3 class="hmenu__h3-title">Контакты</h3>
-              <ul class="hmenu__l-contacts">
+              <h3 class="hmenu__h3-title menu-item">Контакты</h3>
+              <ul class="hmenu__l-contacts menu-item">
                 <li class="l-contacts__item">+7 (980) 900 92 08</li>
                 <li class="l-contacts__item">mailterranica@yandex.ru</li>
               </ul>
-              <div class="h-menu__h-slinks">
+              <div class="h-menu__h-slinks menu-item">
                 <p>
                   Напишите нам в чат, или мессенджеры, закажите обратный звонок.
                   Мы отвечаем быстро:
@@ -80,7 +92,7 @@
                   </li>
                 </ul>
               </div>
-              <ul class="hmenu__twork">
+              <ul class="hmenu__twork menu-item">
                 <li class="twork__item d-flex flex-column">
                   <span>Режим работы:</span>
                   Мы работаем ежедневно с 10:00 до 20:00
@@ -91,7 +103,7 @@
                 </li>
               </ul>
               <div
-                class="hmenu__button bterr"
+                class="hmenu__button bterr menu-item"
                 id="open-map"
                 onclick="onContactMap()"
               >
@@ -106,7 +118,7 @@
                 закрыть карту
               </div>
               <div
-                class="hmenu__subus d-flex align-items-center justify-content-between"
+                class="hmenu__subus d-flex align-items-center justify-content-between menu-item"
               >
                 <div class="subus-container">
                   <p>Подписывайтесь на нас:</p>
@@ -936,6 +948,8 @@
       });
       // ========================
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

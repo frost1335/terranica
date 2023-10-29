@@ -40,12 +40,12 @@
       <div class="header__menu p-3">
         <div class="hmenu container">
           <div class="hmenu__h-contacts">
-            <h3 class="hmenu__h3-title">Контакты</h3>
-            <ul class="hmenu__l-contacts">
+            <h3 class="hmenu__h3-title menu-item">Контакты</h3>
+            <ul class="hmenu__l-contacts menu-item">
               <li class="l-contacts__item">+7 (980) 900 92 08</li>
               <li class="l-contacts__item">mailterranica@yandex.ru</li>
             </ul>
-            <div class="h-menu__h-slinks">
+            <div class="h-menu__h-slinks menu-item">
               <p>
                 Напишите нам в чат, или мессенджеры, закажите обратный звонок.
                 Мы отвечаем быстро:
@@ -73,7 +73,7 @@
                 </li>
               </ul>
             </div>
-            <ul class="hmenu__twork">
+            <ul class="hmenu__twork menu-item">
               <li class="twork__item d-flex flex-column">
                 <span>Режим работы:</span>
                 Мы работаем ежедневно с 10:00 до 20:00
@@ -84,7 +84,7 @@
               </li>
             </ul>
             <div
-              class="hmenu__button bterr"
+              class="hmenu__button bterr menu-item"
               id="open-map"
               onclick="onContactMap()"
             >
@@ -99,7 +99,7 @@
               закрыть карту
             </div>
             <div
-              class="hmenu__subus d-flex align-items-center justify-content-between"
+              class="hmenu__subus d-flex align-items-center justify-content-between menu-item"
             >
               <div class="subus-container">
                 <p>Подписывайтесь на нас:</p>
@@ -561,7 +561,7 @@
             >
               <div class="content">
                 <div>
-                  <h2>Безопасность на первом месте</h2>
+                  <h2 id="security-title">Безопасность на первом месте</h2>
                   <p>
                     Мы придерживаемся высоких стандартов безопасности. Благодаря
                     использованию 90% стандартных деталей и возможности простого
@@ -595,7 +595,11 @@
                 </div>
                 <div>
                   <div class="content-video">
-                    <img src="./img/home/security.jpg" alt="security-img" />
+                    <img
+                      id="security-img"
+                      src="./img/home/security.jpg"
+                      alt="security-img"
+                    />
                   </div>
                 </div>
               </div>
@@ -783,7 +787,7 @@
                 </div>
               </div>
               <div class="content-mobile">
-                <h2>Безопасность на первом месте</h2>
+                <h2 class="security-title">Безопасность на первом месте</h2>
                 <div class="content-video">
                   <img src="./img/home/security.jpg" alt="security-img" />
                 </div>
@@ -805,7 +809,7 @@
             >
               <div class="content">
                 <div>
-                  <h2>Безопасность на первом месте</h2>
+                  <h2 class="security-title">Безопасность на первом месте</h2>
                   <p>
                     Мы придерживаемся высоких стандартов безопасности. Благодаря
                     использованию 90% стандартных деталей и возможности простого
@@ -844,7 +848,7 @@
                 </div>
               </div>
               <div class="content-mobile">
-                <h2>Безопасность на первом месте</h2>
+                <h2 class="security-title">Безопасность на первом месте</h2>
                 <div class="content-video">
                   <img src="./img/home/security.jpg" alt="security-img" />
                 </div>
@@ -866,7 +870,7 @@
             >
               <div class="content">
                 <div>
-                  <h2>Безопасность на первом месте</h2>
+                  <h2 class="security-title">Безопасность на первом месте</h2>
                   <p>
                     Мы придерживаемся высоких стандартов безопасности. Благодаря
                     использованию 90% стандартных деталей и возможности простого
@@ -904,6 +908,20 @@
                   </div>
                 </div>
               </div>
+              <div class="content-mobile">
+                <h2 class="security-title">Безопасность на первом месте</h2>
+                <div class="content-video">
+                  <img src="./img/home/security.jpg" alt="security-img" />
+                </div>
+                <p>
+                  Мы придерживаемся высоких стандартов безопасности. Благодаря
+                  использованию 90% стандартных деталей и возможности простого
+                  полевого ремонта, наш вездеход станет надежным помощником и
+                  безопасно доставит вас в любую точку.
+                </p>
+
+                <button>Подробнее</button>
+              </div>
             </div>
             <div
               class="tab-pane fade"
@@ -912,7 +930,7 @@
               aria-labelledby="props-tab"
             >
               <div class="content">
-                <div>
+                <div class="security-title">
                   <h2>Безопасность на первом месте</h2>
                   <p>
                     Мы придерживаемся высоких стандартов безопасности. Благодаря
@@ -952,7 +970,7 @@
                 </div>
               </div>
               <div class="content-mobile">
-                <h2>Безопасность на первом месте</h2>
+                <h2 class="security-title">Безопасность на первом месте</h2>
                 <div class="content-video">
                   <img src="./img/home/security.jpg" alt="security-img" />
                 </div>
@@ -974,7 +992,7 @@
             >
               <div class="content">
                 <div>
-                  <h2>Безопасность на первом месте</h2>
+                  <h2 class="security-title">Безопасность на первом месте</h2>
                   <p>
                     Мы придерживаемся высоких стандартов безопасности. Благодаря
                     использованию 90% стандартных деталей и возможности простого
@@ -1013,7 +1031,7 @@
                 </div>
               </div>
               <div class="content-mobile">
-                <h2>Безопасность на первом месте</h2>
+                <h2 class="security-title">Безопасность на первом месте</h2>
                 <div class="content-video">
                   <img src="./img/home/security.jpg" alt="security-img" />
                 </div>
@@ -1035,7 +1053,7 @@
             >
               <div class="content">
                 <div>
-                  <h2>Безопасность на первом месте</h2>
+                  <h2 class="security-title">Безопасность на первом месте</h2>
                   <p>
                     Мы придерживаемся высоких стандартов безопасности. Благодаря
                     использованию 90% стандартных деталей и возможности простого
@@ -1074,7 +1092,7 @@
                 </div>
               </div>
               <div class="content-mobile">
-                <h2>Безопасность на первом месте</h2>
+                <h2 class="security-title">Безопасность на первом месте</h2>
                 <div class="content-video">
                   <img src="./img/home/security.jpg" alt="security-img" />
                 </div>
@@ -1104,7 +1122,7 @@
       <!-- 3D model -->
       <section id="three_model" class="">
         <h2>взгляните со всех сторон на terranica expedition</h2>
-        <p>
+        <p id="three-text-span">
           Переключайтесь между цветами и используйте курсор для перемещения в
           режиме 360˚.
         </p>
@@ -1165,10 +1183,10 @@
           </button>
         </div>
         <div class="three-model">
-          <div class="bg-img">
+          <div class="bg-img" id="three-bg-img">
             <img src="./img/home/three-bg.png" alt="three-model-img" />
           </div>
-          <div class="bg-text">
+          <div class="bg-text" id="three-bg-text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1297"

@@ -206,9 +206,10 @@
   max-width: 450px;
 }
 #security .content .content-video {
+  overflow: hidden;
   max-width: 558px;
   border-radius: 12px;
-  padding-right: 50px;
+  margin-right: 50px;
   cursor: pointer;
 }
 #security .content .content-video img {
@@ -321,6 +322,7 @@
   opacity: 0.6;
 }
 #three_model .three-model {
+  overflow: hidden;
   max-width: 1280px;
   height: 710px;
   margin: auto;
@@ -334,7 +336,7 @@
   z-index: 15;
 }
 #three_model .three-model .bg-text {
-  width: 100%;
+  width: 95%;
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -345,7 +347,7 @@
   width: 100%;
 }
 #three_model .three-model .bg-img {
-  width: 100%;
+  width: 80%;
   position: absolute;
   z-index: 1;
   top: 50%;

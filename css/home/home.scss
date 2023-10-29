@@ -237,9 +237,10 @@
     }
 
     .content-video {
+      overflow: hidden;
       max-width: 558px;
       border-radius: 12px;
-      padding-right: 50px;
+      margin-right: 50px;
       cursor: pointer;
 
       img {
@@ -369,6 +370,7 @@
   }
 
   .three-model {
+    overflow: hidden;
     max-width: 1280px;
     height: 710px;
     margin: auto;
@@ -383,7 +385,7 @@
     }
 
     .bg-text {
-      width: 100%;
+      width: 95%;
       position: absolute;
       z-index: 1;
       left: 50%;
@@ -396,7 +398,7 @@
     }
 
     .bg-img {
-      width: 100%;
+      width: 80%;
       position: absolute;
       z-index: 1;
       top: 50%;
