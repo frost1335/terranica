@@ -59,10 +59,21 @@ loaderStart();
 const menuBtn = document.querySelector(".burger-menu");
 
 function menuAnimation(e) {
+  const menuLinks = document.querySelectorAll(".hmenu-ul__item");
+  const menuItems = document.querySelectorAll(".menu-item");
+  menuLinks.forEach((elem) => {
+    elem.style = {
+      opacity: 1,
+      transform: "translate(0px, 0px)",
+    };
+  });
+  menuItems.forEach((elem) => {
+    elem.style = {
+      opacity: 1,
+      transform: "translate(0px, 0px)",
+    };
+  });
   if (!e.target.classList.contains("burger-menu--active")) {
-    const menuLinks = document.querySelectorAll(".hmenu-ul__item");
-    const menuItems = document.querySelectorAll(".menu-item");
-
     menuLinks.forEach((elem, index) => {
       gsap.from(elem, {
         x: 60,

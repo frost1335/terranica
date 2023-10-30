@@ -42,8 +42,12 @@
           <div class="hmenu__h-contacts">
             <h3 class="hmenu__h3-title menu-item">Контакты</h3>
             <ul class="hmenu__l-contacts menu-item">
-              <li class="l-contacts__item">+7 (980) 900 92 08</li>
-              <li class="l-contacts__item">mailterranica@yandex.ru</li>
+              <a class="l-contacts__item" href="tel:+7 (980) 900 92 08"
+                >+7 (980) 900 92 08</a
+              >
+              <a class="l-contacts__item" href="mailto:mailterranica@yandex.ru"
+                >mailterranica@yandex.ru</a
+              >
             </ul>
             <div class="h-menu__h-slinks menu-item">
               <p>
@@ -83,20 +87,22 @@
                 Россия, г. Москва, ул. Академика Пилюгина д. 14, корп. 2.
               </li>
             </ul>
-            <div
-              class="hmenu__button bterr menu-item"
-              id="open-map"
-              onclick="onContactMap()"
-            >
-              Посмотреть на карте
-            </div>
-            <div
-              class="hmenu__button bterr"
-              id="close-map"
-              onclick="onCloseMap()"
-              style="display: none"
-            >
-              закрыть карту
+            <div class="menu-item">
+              <div
+                class="hmenu__button bterr"
+                id="open-map"
+                onclick="onContactMap()"
+              >
+                Посмотреть на карте
+              </div>
+              <div
+                class="hmenu__button bterr"
+                id="close-map"
+                onclick="onCloseMap()"
+                style="display: none"
+              >
+                закрыть карту
+              </div>
             </div>
             <div
               class="hmenu__subus d-flex align-items-center justify-content-between menu-item"
@@ -200,8 +206,12 @@
             </li>
           </ul>
           <div class="menu-contacts">
-            <h4><a href="#">+7 (980) 900 92 08</a></h4>
-            <h4><a href="#">mailterranica@yandex.ru</a></h4>
+            <h4><a href="tel:+7 (980) 900 92 08">+7 (980) 900 92 08</a></h4>
+            <h4>
+              <a href="mailto:mailterranica@yandex.ru"
+                >mailterranica@yandex.ru</a
+              >
+            </h4>
             <p>
               Напишите нам в чат, или мессенджеры, закажите обратный звонок. Мы
               отвечаем быстро:
@@ -235,8 +245,12 @@
         <div class="contacts-menu-mobile">
           <h2>Контакты</h2>
           <div class="menu-contacts">
-            <h4><a href="#">+7 (980) 900 92 08</a></h4>
-            <h4><a href="#">mailterranica@yandex.ru</a></h4>
+            <h4><a href="tel:+7 (980) 900 92 08">+7 (980) 900 92 08</a></h4>
+            <h4>
+              <a href="mailto:mailterranica@yandex.ru"
+                >mailterranica@yandex.ru</a
+              >
+            </h4>
             <p>
               Напишите нам в чат, или мессенджеры, закажите обратный звонок. Мы
               отвечаем быстро:
@@ -385,7 +399,10 @@
                   autoplay
                   id="home-corner-video"
                 >
-                  <source src="./img/home/corner-video.mp4" type="video/mp4" />
+                  <source
+                    src="./img/home/SUV_Teraanica_Video.mp4"
+                    type="video/mp4"
+                  />
                 </video>
               </div>
               <div class="video-controllers">
@@ -403,14 +420,14 @@
 
       <!-- Основной контент -->
       <main class="main" id="home-main">
-        <video muted="muted" data-interval="true" autoplay id="home-main-video">
-          <source src="./img/home/home-main-video.mp4" type="video/mp4" />
+        <video data-interval="true" id="home-main-video">
+          <source src="./img/home/SUV_Teraanica_Video.mp4" type="video/mp4" />
         </video>
         <div class="video-controllers">
-          <button id="main-pause" class="active">
+          <button id="main-pause">
             <img src="./assets/icons/pause.svg" alt="pause-icon" />
           </button>
-          <button id="main-play">
+          <button id="main-play" class="active">
             <img src="./assets/icons/play.svg" alt="play-icon" />
           </button>
         </div>
@@ -1332,7 +1349,7 @@
               <div
                 id="carouselExampleIndicators"
                 data-bs-interval="false"
-                class="carousel slide"
+                class="carousel slide carousel-fade"
                 data-bs-ride="carousel"
               >
                 <div class="carousel-inner">
@@ -1386,32 +1403,6 @@
                     />
                   </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev"
-                  onclick="onPrev()"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next"
-                  onclick="onNext()"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
           </div>
@@ -1425,7 +1416,7 @@
               <div
                 id="carouselExampleIndicators"
                 data-bs-interval="false"
-                class="carousel slide"
+                class="carousel slide carousel-fade"
                 data-bs-ride="carousel"
               >
                 <div class="carousel-inner">
@@ -2493,8 +2484,12 @@
           >
             <div class="f-mid-block">
               <ul class="f-mid__ul mt-4">
-                <li class="f-mid__item">+7 (980) 900 92 08</li>
-                <li class="f-mid__item">mailterranica@yandex.ru</li>
+                <a class="f-mid__item" href="tel:+7 (980) 900 92 08"
+                  >+7 (980) 900 92 08</a
+                >
+                <a class="f-mid__item" href="mailto:mailterranica@yandex.ru"
+                  >mailterranica@yandex.ru</a
+                >
               </ul>
               <div class="f-mid-block__social">
                 <p class="f-mid__subtitle">

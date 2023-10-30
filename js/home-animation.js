@@ -20,7 +20,6 @@ sections.forEach((elem, index) => {
 
 gsap.from("header", {
   y: -200,
-  backgroundPosition: -300,
   opacity: 0,
   duration: 1.5,
   delay: 4.5,
